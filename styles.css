@@ -241,12 +241,35 @@ h3 {
   color: var(--blue);
 }
 
-.small-line,
 .disclosure,
 .form-note,
 .site-footer p {
   color: var(--muted);
   font-size: 0.92rem;
+}
+
+.hero-promise {
+  display: inline-flex;
+  align-items: center;
+  max-width: 100%;
+  margin: 4px 0 0;
+  border: 1px solid rgba(6, 59, 120, 0.26);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 12px 30px rgba(6, 59, 120, 0.08);
+  color: var(--blue);
+  font-size: 0.94rem;
+  font-weight: 900;
+  line-height: 1;
+  overflow: hidden;
+}
+
+.hero-promise span {
+  padding: 10px 13px;
+}
+
+.hero-promise span + span {
+  border-left: 1px solid var(--line);
 }
 
 .chat-card {

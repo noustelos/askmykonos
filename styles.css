@@ -642,6 +642,20 @@ h3 {
   gap: 14px;
 }
 
+.footer-credit {
+  color: var(--blue);
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
+.footer-credit:hover {
+  color: var(--text);
+}
+
 .footer-links button {
   padding: 0;
   border: 0;

@@ -16,6 +16,51 @@ const questionCards = document.querySelectorAll(".question-card");
 const notifyForm = document.querySelector("#notify-form");
 const modalButtons = document.querySelectorAll("[data-modal]");
 const closeButtons = document.querySelectorAll("[data-close]");
+const siteHeader = document.querySelector(".site-header");
+const menuToggle = document.querySelector(".menu-toggle");
+const siteNav = document.querySelector(".site-nav");
+
+const closeMenu = () => {
+  if (!siteHeader || !menuToggle) {
+    return;
+  }
+
+  siteHeader.classList.remove("is-menu-open");
+  menuToggle.setAttribute("aria-expanded", "false");
+  menuToggle.setAttribute("aria-label", "Open menu");
+};
+
+if (menuToggle && siteHeader && siteNav) {
+  menuToggle.addEventListener("click", () => {
+    const isOpen = siteHeader.classList.toggle("is-menu-open");
+
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+    menuToggle.setAttribute("aria-label", isOpen ? "Close menu" : "Open menu");
+  });
+
+  siteNav.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", closeMenu);
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      closeMenu();
+    }
+  });
+}
+
+document.querySelectorAll('a[href="#top"]').forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+    closeMenu();
+
+    window.scrollTo({ top: 0, behavior: "smooth" });
+
+    if (window.location.hash !== "#top") {
+      window.history.pushState(null, "", "#top");
+    }
+  });
+});
 
 const showAnswerPreview = (card, shouldScroll = true) => {
   const question = card.dataset.question;

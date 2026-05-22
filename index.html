@@ -71,7 +71,7 @@
             <span data-i18n="heroValueStrip">Free. No app. No sign-up.</span>
           </div>
           <div class="hero-actions" role="group" aria-label="Primary actions">
-            <a class="button button-primary" href="#chatbot" data-i18n="startAsking">Start Asking</a>
+            <a class="button button-primary" href="#chat-box" data-i18n="startAsking">Start Asking</a>
             <a class="button button-secondary" href="#questions" data-i18n="seeQuestions">See Example Questions</a>
           </div>
         </div>
@@ -81,23 +81,13 @@
             <span class="status-dot" aria-hidden="true"></span>
             <span data-i18n="previewMode">Preview mode</span>
           </div>
-          <div class="chat-thread">
-            <div class="message user-message">
-              <span data-i18n="chatUser">You</span>
-              <p data-i18n="chatSampleQuestion1">Best sunset spot tonight?</p>
-            </div>
-            <div class="message ai-message">
-              <span data-i18n="chatAi">Ask Santorini AI</span>
-              <p data-i18n="chatSampleAnswer1">Oia is the most famous sunset spot, but Imerovigli is usually calmer with beautiful caldera views. For something special, a sunset catamaran cruise can be a relaxed alternative.</p>
-            </div>
-            <div class="message user-message">
-              <span data-i18n="chatUser">You</span>
-              <p data-i18n="chatSampleQuestion2">Any beach recommendation?</p>
-            </div>
-            <div class="message ai-message">
-              <span data-i18n="chatAi">Ask Santorini AI</span>
-              <p data-i18n="chatSampleAnswer2">Perissa and Perivolos are great for black sand beaches and beach bars. Kamari is easy and family-friendly. Red Beach is unique but can be crowded.</p>
-            </div>
+          <div id="chat-box" class="chat-thread chat-box" aria-live="polite">
+            <div class="bot-message" data-i18n="chatGreeting">Hi! I'm your local Santorini AI. Ask me anything.</div>
+          </div>
+          <div class="input-area">
+            <input type="text" id="user-input" data-i18n-attr="placeholder:chatPlaceholder" placeholder="Ask about beaches, sunsets, buses..." autocomplete="off">
+            <button id="mic-btn" class="mic-btn" type="button" title="Speak to AI" aria-label="Speak to AI" data-i18n-attr="title:micAria, aria-label:micAria">🎤</button>
+            <button id="send-btn" class="send-btn" type="button" data-i18n="sendButton">Send</button>
           </div>
           <p class="chatbot-tech-note" data-i18n="geminiNote">AI assistant using Google Gemini technology.</p>
         </aside>
@@ -383,6 +373,6 @@
       </div>
     </dialog>
 
-    <script src="script.min.js" defer></script>
+    <script src="script.js" defer></script>
   </body>
 </html>

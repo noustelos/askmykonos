@@ -21,6 +21,14 @@ const translations = {
     heroValueStrip: "Free. No app. No sign-up.",
     valueReinforce: "Start instantly — free, with no app and no sign-up.",
     previewMode: "Preview mode",
+    chatGreeting: "Hi! I'm your local Santorini AI. Ask me anything.",
+    chatPlaceholder: "Ask about beaches, sunsets, buses...",
+    sendButton: "Send",
+    micAria: "Speak to AI",
+    listeningAria: "Listening",
+    thinkingMessage: "Thinking...",
+    noReplyMessage: "Sorry, I could not generate a reply.",
+    disconnectedMessage: "Sorry, I got disconnected. Please try again.",
     chatUser: "You",
     chatAi: "Ask Santorini AI",
     chatSampleQuestion1: "What should I do in Santorini today?",
@@ -176,6 +184,14 @@ const translations = {
     heroValueStrip: "Δωρεάν. Χωρίς εφαρμογή. Χωρίς εγγραφή.",
     valueReinforce: "Ξεκίνα άμεσα — δωρεάν, χωρίς εφαρμογή και χωρίς εγγραφή.",
     previewMode: "Λειτουργία preview",
+    chatGreeting: "Γεια! Είμαι ο τοπικός AI οδηγός σου για τη Σαντορίνη. Ρώτησέ με ό,τι θέλεις.",
+    chatPlaceholder: "Ρώτησε για παραλίες, ηλιοβασίλεμα, λεωφορεία...",
+    sendButton: "Αποστολή",
+    micAria: "Μίλησε στον AI οδηγό",
+    listeningAria: "Ακούω",
+    thinkingMessage: "Σκέφτομαι...",
+    noReplyMessage: "Συγγνώμη, δεν μπόρεσα να δημιουργήσω απάντηση.",
+    disconnectedMessage: "Συγγνώμη, αποσυνδέθηκα. Δοκίμασε ξανά.",
     chatUser: "Εσύ",
     chatAi: "Ask Santorini AI",
     chatSampleQuestion1: "Τι να κάνω σήμερα στη Σαντορίνη;",
@@ -328,6 +344,11 @@ const acceptCookies = document.querySelector("#accept-cookies");
 const essentialCookies = document.querySelector("#essential-cookies");
 const languageButtons = document.querySelectorAll("[data-language]");
 const languageToggle = document.querySelector(".language-toggle");
+const workerUrl = "https://white-fog-d126.avatar68.workers.dev";
+const chatBox = document.getElementById("chat-box");
+const userInput = document.getElementById("user-input");
+const sendBtn = document.getElementById("send-btn");
+const micBtn = document.getElementById("mic-btn");
 const cookieStorageKey = "askSantoriniCookiePreference";
 const languageStorageKey = "preferredLanguage";
 let currentLanguage = "en";
@@ -473,6 +494,19 @@ const updateActivePreview = (language) => {
   }
 };
 
+const updateChatControls = (language) => {
+  const copy = translations[language];
+
+  if (userInput) {
+    userInput.setAttribute("placeholder", copy.chatPlaceholder);
+  }
+
+  if (micBtn) {
+    micBtn.setAttribute("title", copy.micAria);
+    micBtn.setAttribute("aria-label", copy.micAria);
+  }
+};
+
 const updateMenuLabel = () => {
   if (!menuToggle) {
     return;
@@ -492,6 +526,7 @@ const setLanguage = (language, options = {}) => {
   updateLanguageToggle(normalizedLanguage);
   updateQuestionCards(normalizedLanguage);
   updateActivePreview(normalizedLanguage);
+  updateChatControls(normalizedLanguage);
   updateMenuLabel();
   setStoredValue(languageStorageKey, normalizedLanguage);
 
@@ -696,5 +731,152 @@ document.querySelectorAll("dialog").forEach((modal) => {
     document.body.classList.remove("modal-open");
   });
 });
+
+function appendMessage(text, className) {
+  if (!chatBox) return null;
+
+  const msgDiv = document.createElement("div");
+  const id = "msg-" + Date.now() + "-" + Math.random().toString(36).slice(2);
+
+  msgDiv.id = id;
+  msgDiv.className = className;
+  msgDiv.innerText = text;
+
+  chatBox.appendChild(msgDiv);
+  chatBox.scrollTop = chatBox.scrollHeight;
+
+  return id;
+}
+
+async function sendMessage(text) {
+  const cleanText = String(text || "").trim();
+
+  if (!cleanText) return;
+  if (!chatBox || !userInput) return;
+
+  const copy = translations[currentLanguage];
+
+  appendMessage(cleanText, "user-message");
+  userInput.value = "";
+  userInput.disabled = true;
+  if (sendBtn) sendBtn.disabled = true;
+
+  const loadingId = appendMessage(copy.thinkingMessage, "bot-message loading");
+
+  try {
+    const response = await fetch(workerUrl, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        message: cleanText
+      })
+    });
+
+    let data = null;
+
+    try {
+      data = await response.json();
+    } catch (jsonError) {
+      throw new Error("Worker did not return valid JSON.");
+    }
+
+    if (!response.ok) {
+      throw new Error(data?.error || "Worker request failed.");
+    }
+
+    const loadingEl = loadingId ? document.getElementById(loadingId) : null;
+    if (loadingEl) loadingEl.remove();
+
+    appendMessage(data?.reply || copy.noReplyMessage, "bot-message");
+
+  } catch (error) {
+    console.error("AskSantorini chat error:", error);
+
+    const loadingEl = loadingId ? document.getElementById(loadingId) : null;
+    if (loadingEl) loadingEl.remove();
+
+    appendMessage(copy.disconnectedMessage, "bot-message error");
+
+  } finally {
+    userInput.disabled = false;
+    if (sendBtn) sendBtn.disabled = false;
+    userInput.focus();
+  }
+}
+
+if (sendBtn && userInput) {
+  sendBtn.addEventListener("click", () => {
+    sendMessage(userInput.value);
+  });
+
+  userInput.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      sendMessage(userInput.value);
+    }
+  });
+}
+
+const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+if (micBtn && userInput && SpeechRecognition) {
+  const recognition = new SpeechRecognition();
+
+  recognition.continuous = false;
+  recognition.interimResults = false;
+
+  function resetMicButton() {
+    const copy = translations[currentLanguage];
+
+    micBtn.classList.remove("recording");
+    micBtn.setAttribute("aria-label", copy.micAria);
+    micBtn.textContent = "🎤";
+  }
+
+  function getCurrentSpeechLanguage() {
+    const htmlLang = document.documentElement.lang || "en";
+    return htmlLang.startsWith("el") ? "el-GR" : "en-US";
+  }
+
+  micBtn.addEventListener("click", () => {
+    try {
+      recognition.lang = getCurrentSpeechLanguage();
+      recognition.start();
+
+      micBtn.classList.add("recording");
+      micBtn.setAttribute("aria-label", translations[currentLanguage].listeningAria);
+      micBtn.textContent = "■";
+    } catch (error) {
+      console.warn("Speech recognition could not start:", error);
+    }
+  });
+
+  recognition.onresult = (event) => {
+    const transcript = event.results?.[0]?.[0]?.transcript || "";
+
+    userInput.value = transcript;
+    resetMicButton();
+
+    if (transcript.trim()) {
+      sendMessage(transcript);
+    }
+  };
+
+  recognition.onspeechend = () => {
+    recognition.stop();
+  };
+
+  recognition.onend = resetMicButton;
+
+  recognition.onerror = (event) => {
+    console.warn("Speech recognition error:", event.error);
+    resetMicButton();
+  };
+
+} else if (micBtn) {
+  micBtn.style.display = "none";
+}
 
 setLanguage(getInitialLanguage());

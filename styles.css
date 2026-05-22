@@ -610,6 +610,10 @@ h3 {
   position: relative;
 }
 
+#concierge {
+  scroll-margin-top: 96px;
+}
+
 .questions-section::before,
 .concierge-section::before,
 .tours-section::before {

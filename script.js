@@ -813,15 +813,15 @@ function logToGoogleSheet(messageText) {
   const googleSheetsUrl = "https://script.google.com/macros/s/AKfycbxdMVU0-PP1Zwhwbt3BBOk-kMxjrmc-T1Kj3LviBtgbR0jBKP40IsMQNx8qfqZ2KZlmKA/exec";
   const detectedLang = messageText.match(/[\u0370-\u03ff\u1f00-\u1fff]/) ? "GR" : "EN";
 
+  const formData = new URLSearchParams();
+  formData.append('message', messageText);
+  formData.append('language', detectedLang);
+
   fetch(googleSheetsUrl, {
     method: "POST",
     mode: "no-cors",
-    headers: { "Content-Type": "text/plain" },
-    body: JSON.stringify({
-      message: messageText,
-      language: detectedLang
-    })
-  }).catch(err => console.log("Google Sheets logging omitted or failed:", err));
+    body: formData
+  }).catch(err => console.log("Sheets logging omitted:", err));
 }
 
 async function sendMessage(text) {

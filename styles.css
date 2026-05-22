@@ -521,19 +521,24 @@ h3 {
 .chat-card-top {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 0.5rem;
   margin-bottom: 18px;
   color: var(--navy);
   font-size: 0.82rem;
-  font-weight: 800;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
 }
 
-.status-dot {
+.status-dot,
+.preview-status-dot {
+  position: relative;
   width: 9px;
   height: 9px;
-  border-radius: 50%;
-  background: var(--apricot);
-  box-shadow: 0 0 0 5px rgba(240, 185, 133, 0.18), 0 0 18px rgba(240, 185, 133, 0.70);
+  flex: 0 0 auto;
+  border-radius: 999px;
+  background: #4f8f8a;
+  box-shadow: 0 0 0 0 rgba(79, 143, 138, 0.45);
 }
 
 .chat-thread {
@@ -594,7 +599,8 @@ h3 {
 .tours-section,
 .concierge-section,
 .partners-section,
-.chatbot-section {
+.chatbot-section,
+.network-section {
   padding: 72px 0;
 }
 
@@ -825,40 +831,39 @@ h3 {
 .preview-status {
   display: inline-flex;
   align-items: center;
-  gap: 0.45rem;
+  gap: 0.5rem;
+  color: var(--navy);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
 }
 
-.preview-status-dot {
-  position: relative;
-  width: 8px;
-  height: 8px;
-  flex: 0 0 auto;
-  border-radius: 999px;
-  background: var(--teal);
-  box-shadow: 0 0 0 0 rgba(79, 143, 138, 0.35);
-}
-
+.status-dot::after,
 .preview-status-dot::after {
   content: "";
   position: absolute;
-  inset: -5px;
-  border: 1px solid rgba(79, 143, 138, 0.35);
+  inset: -6px;
+  border: 1px solid rgba(79, 143, 138, 0.45);
   border-radius: inherit;
   opacity: 0;
   transform: scale(0.75);
-  animation: statusPulse 2.4s ease-out infinite;
+  animation: livePulse 2.1s ease-out infinite;
 }
 
-@keyframes statusPulse {
+@keyframes livePulse {
   0% {
-    opacity: 0.45;
+    opacity: 0.55;
     transform: scale(0.75);
   }
 
-  70%,
+  70% {
+    opacity: 0;
+    transform: scale(1.75);
+  }
+
   100% {
     opacity: 0;
-    transform: scale(1.55);
+    transform: scale(1.75);
   }
 }
 
@@ -1375,6 +1380,95 @@ h3 {
   font-weight: 700;
 }
 
+.network-section {
+  padding-top: 32px;
+}
+
+.network-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 0.78fr) minmax(320px, 1fr);
+  gap: clamp(22px, 4vw, 42px);
+  align-items: center;
+  padding: clamp(24px, 4vw, 38px);
+  border: 1px solid rgba(255, 255, 255, 0.58);
+  border-radius: 24px;
+  background:
+    radial-gradient(circle at 94% 10%, rgba(159, 216, 210, 0.18), transparent 30%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.70), rgba(255, 248, 236, 0.82));
+  box-shadow: 0 16px 44px rgba(82, 54, 24, 0.07);
+  backdrop-filter: blur(14px);
+}
+
+.network-copy h2 {
+  margin-bottom: 14px;
+  color: var(--navy);
+  font-size: clamp(1.8rem, 3.4vw, 3.1rem);
+}
+
+.network-copy p {
+  max-width: 560px;
+  color: var(--muted);
+}
+
+.network-support {
+  margin-bottom: 0;
+  color: var(--teal) !important;
+  font-weight: 800;
+}
+
+.network-destinations {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.network-destination {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 42px;
+  padding: 10px 12px 10px 14px;
+  border: 1px solid rgba(216, 154, 115, 0.20);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.58);
+  color: var(--navy);
+  font-size: 0.88rem;
+  font-weight: 800;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.network-destination.is-live {
+  border-color: rgba(79, 143, 138, 0.30);
+  background: rgba(159, 216, 210, 0.16);
+}
+
+.network-destination.is-live:hover {
+  box-shadow: 0 10px 24px rgba(79, 143, 138, 0.12);
+  transform: translateY(-1px);
+}
+
+.network-badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 22px;
+  padding: 5px 8px;
+  border: 1px solid rgba(79, 143, 138, 0.20);
+  border-radius: 999px;
+  background: rgba(255, 248, 236, 0.82);
+  color: var(--teal);
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.network-destination:not(.is-live) .network-badge {
+  border-color: rgba(216, 154, 115, 0.22);
+  color: var(--muted);
+}
+
 .site-footer {
   border-top: 1px solid rgba(216, 154, 115, 0.14);
   background:
@@ -1399,6 +1493,13 @@ h3 {
 
 .footer-brand-group p {
   max-width: 520px;
+}
+
+.footer-network-line {
+  margin-bottom: 6px;
+  color: var(--teal) !important;
+  font-size: 0.86rem !important;
+  font-weight: 800;
 }
 
 .footer-links {
@@ -1722,7 +1823,8 @@ h3 {
   .hero,
   .split-heading,
   .partners-panel,
-  .chatbot-panel {
+  .chatbot-panel,
+  .network-panel {
     grid-template-columns: 1fr;
   }
 
@@ -1760,6 +1862,10 @@ h3 {
 
   .partner-actions {
     justify-items: start;
+  }
+
+  .network-destinations {
+    justify-content: flex-start;
   }
 
   .footer-inner {
@@ -1806,8 +1912,13 @@ h3 {
   .tours-section,
   .concierge-section,
   .partners-section,
-  .chatbot-section {
+  .chatbot-section,
+  .network-section {
     padding: 46px 0;
+  }
+
+  .network-section {
+    padding-top: 18px;
   }
 
   h1 {
@@ -1847,7 +1958,8 @@ h3 {
   .tour-card,
   .concierge-card,
   .partners-panel,
-  .chatbot-panel {
+  .chatbot-panel,
+  .network-panel {
     border-radius: 16px;
   }
 
@@ -1886,6 +1998,16 @@ h3 {
   }
 
   .form-row .button {
+    width: 100%;
+  }
+
+  .network-destinations {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .network-destination {
+    justify-content: space-between;
     width: 100%;
   }
 
@@ -1977,6 +2099,7 @@ h3 {
     animation-iteration-count: 1 !important;
   }
 
+  .status-dot::after,
   .preview-status-dot::after {
     animation: none !important;
   }

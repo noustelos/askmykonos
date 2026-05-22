@@ -809,21 +809,6 @@ function appendMessage(text, className) {
   return id;
 }
 
-function logToGoogleSheet(messageText) {
-  const googleSheetsUrl = "https://script.google.com/macros/s/AKfycbxdMVU0-PP1Zwhwbt3BBOk-kMxjrmc-T1Kj3LviBtgbR0jBKP40IsMQNx8qfqZ2KZlmKA/exec";
-  const detectedLang = messageText.match(/[\u0370-\u03ff\u1f00-\u1fff]/) ? "GR" : "EN";
-
-  const formData = new URLSearchParams();
-  formData.append('message', messageText);
-  formData.append('language', detectedLang);
-
-  fetch(googleSheetsUrl, {
-    method: "POST",
-    mode: "no-cors",
-    body: formData
-  }).catch(err => console.log("Sheets logging omitted:", err));
-}
-
 async function sendMessage(text) {
   const cleanText = String(text || "").trim();
 
@@ -836,8 +821,6 @@ async function sendMessage(text) {
   userInput.value = "";
   userInput.disabled = true;
   if (sendBtn) sendBtn.disabled = true;
-
-  logToGoogleSheet(cleanText);
 
   const loadingId = appendMessage(copy.thinkingMessage, "bot-message loading");
 

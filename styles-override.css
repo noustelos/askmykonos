@@ -530,6 +530,20 @@
   font-size: 0.76rem;
 }
 
+.chat-disclaimer-note {
+  margin-top: 12px;
+  color: rgba(111, 114, 119, 0.58);
+  font-size: 0.68rem;
+  line-height: 1.35;
+}
+
+.chat-ai-attribution {
+  margin-top: 5px;
+  color: rgba(22, 59, 92, 0.66);
+  font-size: 0.74rem;
+  line-height: 1.35;
+}
+
 @media (max-width: 720px) {
   .chat-card {
     padding: 18px;

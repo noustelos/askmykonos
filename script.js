@@ -40,7 +40,7 @@ const translations = {
     chatSampleQuestion2: "Best sunset spot tonight?",
     chatSampleAnswer2: "Oia is famous but crowded. Imerovigli and Firostefani are calmer, while a sunset catamaran is a more relaxed premium option.",
     geminiNote: "AI answers may need verification for schedules, prices and availability.",
-    aiAttribution: "Powered by advanced AI reasoning for real-time travel guidance.",
+    aiAttribution: "Powered by advanced AI for real-time travel guidance.",
     demoFeature: "Start with intent",
     questionsTitle: "What do you want to know first?",
     questionsIntro: "Ask about hidden beaches, sunset viewpoints, grilled octopus by the sea, boat rides or the easiest plan for today.",

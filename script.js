@@ -396,8 +396,6 @@ const languageButtons = document.querySelectorAll("[data-language]");
 const languageToggle = document.querySelector(".language-toggle");
 const workerUrl = "PASTE_ASKMYKONOS_WORKER_URL_HERE";
 const localPreparationMessage = "AskMykonos is not connected to its dedicated AI engine yet. This local version is ready for design and content work.";
-const blockedLegacyWorkerPart = ["white", "fog", "d126"].join("-");
-const blockedLegacyBrandPart = ["ask", "santorini"].join("");
 const chatBox = document.getElementById("chat-box");
 const userInput = document.getElementById("user-input");
 const sendBtn = document.getElementById("send-btn");
@@ -877,8 +875,9 @@ async function sendMessage(text) {
   const isWorkerConfigured =
     workerUrl &&
     !workerUrl.includes("PASTE_") &&
-    !workerUrl.includes(blockedLegacyWorkerPart) &&
-    !workerUrl.toLowerCase().includes(blockedLegacyBrandPart);
+    !workerUrl.includes("white-fog-d126") &&
+    !workerUrl.includes("asksantorini") &&
+    !workerUrl.includes("workers.dev");
 
   if (!isWorkerConfigured) {
     appendMessage(

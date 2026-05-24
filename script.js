@@ -394,7 +394,8 @@ const acceptCookies = document.querySelector("#accept-cookies");
 const essentialCookies = document.querySelector("#essential-cookies");
 const languageButtons = document.querySelectorAll("[data-language]");
 const languageToggle = document.querySelector(".language-toggle");
-const workerUrl = "https://white-fog-d126.avatar68.workers.dev";
+const workerUrl = "PASTE_ASKMYKONOS_WORKER_URL_HERE";
+const localPreparationMessage = "AskMykonos is not connected to its dedicated AI engine yet. This local version is ready for design and content work.";
 const chatBox = document.getElementById("chat-box");
 const userInput = document.getElementById("user-input");
 const sendBtn = document.getElementById("send-btn");
@@ -871,6 +872,14 @@ async function sendMessage(text) {
   userInput.disabled = true;
   if (sendBtn) sendBtn.disabled = true;
 
+  if (isWorkerUrlPlaceholder(workerUrl)) {
+    appendMessage(localPreparationMessage, "bot-message");
+    userInput.disabled = false;
+    if (sendBtn) sendBtn.disabled = false;
+    userInput.focus();
+    return;
+  }
+
   const loadingId = appendMessage(copy.thinkingMessage, "bot-message loading");
 
   try {
@@ -917,6 +926,16 @@ async function sendMessage(text) {
     if (sendBtn) sendBtn.disabled = false;
     userInput.focus();
   }
+}
+
+function isWorkerUrlPlaceholder(url) {
+  const normalizedUrl = String(url || "").trim();
+
+  return (
+    !normalizedUrl ||
+    normalizedUrl === "PASTE_ASKMYKONOS_WORKER_URL_HERE" ||
+    normalizedUrl.includes("white-fog-d126")
+  );
 }
 
 if (sendBtn && userInput) {

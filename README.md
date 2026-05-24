@@ -27,18 +27,22 @@ Then visit:
 http://localhost:8787
 ```
 
-## Live AI Chat Architecture
+## Local Preparation Mode
 
-The live chat flow is:
+AskMykonos is currently in local preparation mode. It must not use the AskSantorini Worker. Before going live, create and configure a dedicated AskMykonos Cloudflare Worker.
+
+## Future Live AI Chat Architecture
+
+The intended live chat flow is:
 
 ```text
 Frontend -> Cloudflare Worker -> Gemini API
 ```
 
-Worker endpoint:
+Worker endpoint placeholder in `script.js`:
 
 ```text
-https://white-fog-d126.avatar68.workers.dev
+PASTE_ASKMYKONOS_WORKER_URL_HERE
 ```
 
 The frontend expects the Worker to return:
@@ -48,7 +52,7 @@ The frontend expects the Worker to return:
 ```
 
 Current frontend requests include `message`, `destination`, `brand`, and `language`.
-The Worker prompt must also be updated/deployed separately for Mykonos-specific answers; the Worker source is not part of this static frontend repository.
+The dedicated Worker prompt must be configured separately for Mykonos-specific answers; the Worker source is not part of this static frontend repository.
 
 Security:
 
@@ -57,7 +61,7 @@ Security:
 
 CSP:
 
-- `connect-src` allows `https://white-fog-d126.avatar68.workers.dev`.
+- `connect-src` is currently limited to `'self'` until a dedicated AskMykonos Worker is configured.
 
 ## Partner Knowledge
 

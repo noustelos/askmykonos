@@ -1,6 +1,6 @@
-# AskSantorini.ai
+# AskMykonos.ai
 
-Static site for **ASK SANTORINI AI**, a free live AI guide for Santorini visitors.
+Static site for **ASK MYKONOS AI**, a free live AI guide for Mykonos visitors.
 
 The site includes the live chat interface, useful starter questions, partner CTA, lightweight legal notices, and a contact mailto workflow.
 
@@ -75,7 +75,7 @@ To make the bot actively use partner data, the Worker must later include selecte
    ```
 
 4. Deploy.
-5. Connect the custom domain `asksantorini.ai` in Cloudflare when ready.
+5. Connect the custom domain `askmykonos.ai` in Cloudflare when ready.
 
 ## Next Updates
 

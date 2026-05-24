@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://asksantorini.ai/sitemap.xml
+Sitemap: https://askmykonos.ai/sitemap.xml

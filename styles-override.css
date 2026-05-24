@@ -1039,3 +1039,62 @@
     animation: none;
   }
 }
+/* AskMykonos.ai brand layer */
+:root {
+  --bg: #eef9fa;
+  --bg-soft: #f7fcfb;
+  --surface: #ffffff;
+  --surface-soft: #f5fbfc;
+  --navy: #0b4f6c;
+  --mint: #bdeee8;
+  --aqua: #8ee3ef;
+  --sand: #f6e4b8;
+  --teal: #1b8a8f;
+  --terracotta: #e0564f;
+  --apricot: #f6c15e;
+  --sunset: #e0564f;
+  --glow: rgba(246, 193, 94, 0.26);
+  --shadow: 0 24px 70px rgba(11, 79, 108, 0.11);
+}
+
+body {
+  background:
+    radial-gradient(circle at 12% 12%, rgba(246, 193, 94, 0.24), transparent 26vw),
+    radial-gradient(circle at 88% 3%, rgba(142, 227, 239, 0.26), transparent 30vw),
+    linear-gradient(180deg, #f8fcfb 0%, var(--bg) 46%, #dff7f7 100%);
+}
+
+body::before {
+  background:
+    linear-gradient(115deg, transparent 0 52%, rgba(25, 167, 206, 0.055) 52% 52.5%, transparent 52.5% 100%),
+    radial-gradient(ellipse at 50% 0, rgba(255, 255, 255, 0.82), transparent 46vw);
+}
+
+body::after {
+  background:
+    linear-gradient(90deg, transparent 0 18%, rgba(27, 138, 143, 0.09) 18.1%, transparent 18.35% 100%),
+    radial-gradient(circle at 18% 58%, rgba(246, 193, 94, 0.13) 0 1px, transparent 1.5px),
+    radial-gradient(circle at 22% 58%, rgba(25, 167, 206, 0.12) 0 1px, transparent 1.5px),
+    radial-gradient(circle at 26% 58%, rgba(224, 86, 79, 0.10) 0 1px, transparent 1.5px);
+  background-size: auto, 42px 42px, 42px 42px, 42px 42px;
+}
+
+.site-header {
+  background: rgba(247, 252, 251, 0.84);
+  box-shadow: 0 16px 46px rgba(11, 79, 108, 0.09);
+}
+
+.hero::after {
+  background: radial-gradient(circle, rgba(255, 247, 223, 0.96) 0 17%, rgba(246, 193, 94, 0.30) 18% 42%, rgba(142, 227, 239, 0.22) 43% 56%, transparent 70%);
+}
+
+.hero-subtitle {
+  color: #246a75;
+}
+
+.chatbot-panel {
+  background:
+    radial-gradient(circle at 88% 10%, rgba(246, 193, 94, 0.32), transparent 34%),
+    radial-gradient(circle at 8% 100%, rgba(142, 227, 239, 0.24), transparent 32%),
+    linear-gradient(140deg, rgba(11, 79, 108, 0.97), rgba(27, 138, 143, 0.9));
+}

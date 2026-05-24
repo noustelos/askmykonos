@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">AskMykonos.ai</title>
+  <desc id="desc">Aegean-inspired social preview for AskMykonos.ai.</desc>
+  <rect width="1200" height="630" fill="#F5FBFC"/>
+  <path d="M0 440C150 392 276 395 406 434c137 42 260 48 397 3 147-48 270-55 397-8v201H0Z" fill="#DFF7F7"/>
+  <path d="M0 492c150-42 281-42 420 0 134 40 257 42 386 0 151-48 274-52 394-13v151H0Z" fill="#19A7CE" opacity=".18"/>
+  <circle cx="960" cy="170" r="82" fill="#F6C15E"/>
+  <circle cx="960" cy="170" r="54" fill="#FFF7DF"/>
+  <g transform="translate(120 134)">
+    <circle cx="74" cy="74" r="60" fill="#F6C15E"/>
+    <circle cx="74" cy="74" r="40" fill="#ffffff"/>
+    <path d="M74 32v84M32 74h84M44 44l60 60M104 44l-60 60" stroke="#0B4F6C" stroke-width="9" stroke-linecap="round"/>
+    <circle cx="74" cy="74" r="13" fill="#19A7CE"/>
+  </g>
+  <text x="120" y="330" fill="#0B4F6C" font-family="Inter, Arial, sans-serif" font-size="86" font-weight="800">AskMykonos.ai</text>
+  <text x="126" y="395" fill="#1B8A8F" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="700" letter-spacing="2">JUST ASK YOUR MYKONOS AI GUIDE</text>
+  <text x="126" y="462" fill="#4B5563" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="600">Beaches, boats, food, sunsets and easy island plans.</text>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 180" role="img" aria-labelledby="title desc">
+  <title id="title">Ask Mykonos AI</title>
+  <desc id="desc">AskMykonos.ai wordmark with an Aegean sun mark.</desc>
+  <rect width="720" height="180" fill="none"/>
+  <g transform="translate(36 34)">
+    <circle cx="56" cy="56" r="46" fill="#F6C15E"/>
+    <circle cx="56" cy="56" r="31" fill="#ffffff"/>
+    <path d="M56 24v64M24 56h64M33.4 33.4l45.2 45.2M78.6 33.4 33.4 78.6" stroke="#0B4F6C" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="56" cy="56" r="10" fill="#19A7CE"/>
+  </g>
+  <text x="146" y="83" fill="#0B4F6C" font-family="Inter, Arial, sans-serif" font-size="48" font-weight="800">AskMykonos</text>
+  <text x="147" y="124" fill="#1B8A8F" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700" letter-spacing="6">AI</text>
+  <text x="204" y="124" fill="#4B5563" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="600">travel concierge</text>
+</svg>

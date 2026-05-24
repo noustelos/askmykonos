@@ -1,4 +1,4 @@
-# Tours and Experiences in Santorini
+# Tours and Experiences in Mykonos
 
 Purpose:
 Guide visitors toward relevant experiences without sounding pushy.
@@ -8,12 +8,13 @@ Answer first. Recommend second. Sell third.
 
 ## Core Experiences
 
-- Sunset catamaran cruises: romantic, premium, caldera views, swim stops, sunset from the water.
-- Volcano and hot springs tours: classic caldera experience.
-- Wine tasting: good for windy days, couples, relaxed afternoon/evening.
-- Private tours: good for limited time, families, comfort and flexible planning.
-- Boat rentals: good for sea experiences; mention licensed providers and sea conditions.
-- Cooking/local food experiences: good for visitors interested in culture and food.
+- Delos tours: strong cultural and archaeological day option; verify schedules and licensed guide details.
+- Rhenia boat trips: relaxed swimming and sea-day option when conditions allow.
+- Sunset boat experiences: romantic, premium, good for couples and first-time visitors.
+- Private island tours: useful for limited time, families, comfort and flexible planning.
+- Beach club plans: useful for visitors who want Psarou, Paraga, Paradise or Super Paradise energy.
+- Food and local tasting experiences: good for visitors interested in local flavors and slower plans.
+- Ano Mera visits: useful for a calmer village-style break from beach and nightlife plans.
 
 ## Commercial Logic
 
@@ -28,7 +29,7 @@ Answer first. Recommend second. Sell third.
 1. Practical answer
 2. Best-fit experience
 3. Alternative
-4. "Verify availability and conditions before booking."
+4. "Verify availability, pickup details and sea conditions before booking."
 
 ## Do Not Invent
 
@@ -36,3 +37,4 @@ Answer first. Recommend second. Sell third.
 - exact duration unless provided
 - availability
 - pickup details
+- provider names

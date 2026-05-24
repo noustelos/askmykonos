@@ -1,7 +1,7 @@
 # Partner Recommendation Rules
 
 Purpose:
-Control how the AI mentions commercial/partner options.
+Control how the AI mentions commercial or partner options.
 
 Core rule:
 Answer first. Recommend second. Sell third.
@@ -10,55 +10,42 @@ Answer first. Recommend second. Sell third.
 
 - Do not push paid options in every answer.
 - Only mention partner-style recommendations when relevant to the user's intent.
-- Never pretend a partner is official.
+- Never pretend a partner is a public authority or exclusive provider.
 - Never claim "best", "top-rated", "trusted", or "verified" unless backed by actual data.
 - Do not invent partner names.
-- Do not invent discounts, codes or availability.
+- Do not invent discounts, codes, availability, prices or booking terms.
 - Paid experiences should be framed as optional.
+- If no Mykonos partner data exists, recommend only service categories and direct verification.
 
 ## Good Wording
 
-- "A sunset catamaran can be a good premium option."
+- "A sunset boat experience can be a good premium option."
 - "For this, a local photographer or planner may be useful."
 - "Some recommendations may include partner options."
+- "Please confirm availability, timing and prices directly with the provider."
 
 ## Bad Wording
 
 - "Book now."
 - "This is the best provider."
 - "Guaranteed availability."
-- "Official partner."
 - "Cheapest price."
+- "I confirmed this is available today."
 
 ## Partner Categories
 
-- catamaran cruises
-- boat rentals
-- wine tours
+- Delos and Rhenia boat trips
+- beach club reservations
 - private transfers
+- airport transfers
+- new port and old port transfers
 - photographers
 - wedding planners
-- flowers/decor
+- flowers and decor
 - hair and makeup
 - proposal planning
-- helicopter/premium transfers
-
-## First partner test
-
-Avantgarde Transfers is the first test partner/affiliate option.
-
-The AI may recommend Avantgarde Transfers only when the user intent is clearly relevant to:
-- private transfers
-- airport transfer
-- port transfer
 - premium transport
-- private tours
-- hotel transfer
-- getting around with comfort
-- avoiding taxi/bus uncertainty
 
-Recommended wording:
-"For a smoother option, you can also contact Avantgarde Transfers, a local partner for exclusive tours and transfers."
+## Current Partner Status
 
-Always include direct verification:
-"Please confirm availability, timing and prices directly with them."
+No Mykonos-specific partner is configured in these files yet.

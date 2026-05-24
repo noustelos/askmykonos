@@ -3,3 +3,12 @@
 
 # Local QA artifacts
 qa-screenshots/
+
+# Environment files
+.env
+.env.local
+
+# Dependencies / builds
+node_modules/
+dist/
+build/

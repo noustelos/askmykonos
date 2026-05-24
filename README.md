@@ -47,6 +47,9 @@ The frontend expects the Worker to return:
 { "reply": "..." }
 ```
 
+Current frontend requests include `message`, `destination`, `brand`, and `language`.
+The Worker prompt must also be updated/deployed separately for Mykonos-specific answers; the Worker source is not part of this static frontend repository.
+
 Security:
 
 - No API keys are stored in the frontend.
@@ -59,7 +62,7 @@ CSP:
 ## Partner Knowledge
 
 Partner data is currently stored in Markdown knowledge files.
-These files are not automatically used by the live Worker unless their content is injected into the Worker prompt/context.
+Knowledge files are local prompt/reference material and are not automatically used by the Worker unless injected into the Worker prompt/context.
 To make the bot actively use partner data, the Worker must later include selected partner context in its Gemini request.
 
 ## Deploy to Cloudflare Pages

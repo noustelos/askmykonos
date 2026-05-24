@@ -1,4 +1,4 @@
-# Concierge Services in Santorini
+# Concierge Services in Mykonos
 
 Purpose:
 Help with premium visitor needs beyond standard tours.
@@ -9,33 +9,32 @@ Answer first. Recommend second. Sell third.
 ## Categories
 
 - Photographers: couple shoots, honeymoon, family photos, proposal moments, sunset photography.
-- Wedding planners: weddings, elopements, symbolic ceremonies, destination events.
-- Flowers and decoration: bouquets, ceremony styling, proposal setups, event decoration.
-- Hair and makeup: weddings, photoshoots, proposals, special evenings.
-- Proposal planning: romantic setups, sunset moments, private experiences.
-- Helicopter and premium transfers: through licensed local providers only.
+- Wedding planners: weddings, elopements, symbolic ceremonies and destination events.
+- Flowers and decor: bouquets, ceremony styling, proposal setups and event decoration.
+- Hair and makeup: weddings, photoshoots, proposals and special evenings.
+- Proposal planning: romantic setups, sunset moments, private experiences and timing.
+- Premium transport: airport, new port, old port, hotel and late-night transfers through licensed local providers.
+- Boat concierge: Delos, Rhenia, sunset and private sea-day options when conditions allow.
+- Beach club planning: Psarou, Paraga, Paradise, Super Paradise or other beach-club style days.
 
 ## How To Answer Concierge Questions
 
 - Ask date, location, group size, style and budget if needed.
 - Give categories and planning tips first.
-- Recommend partner inquiry only when relevant.
+- Recommend partner inquiry only when relevant and only if partner data exists.
 - Be careful with claims.
 - Keep the tone helpful and premium, not pushy.
 
-## Private Transfers Partner
+## Current Partner Data
 
-Avantgarde Transfers can be used as a known partner option for private transfers, premium transport and exclusive tours in Santorini.
+No Mykonos-specific concierge partner is configured in these local knowledge files.
 
-Contact:
-Phone: +30 6944 541253
-Email: info@avantgardetransfers.gr
-Website: https://www.avantgardetransfers.gr
+If a visitor asks for a provider, help them prepare what to ask and advise direct confirmation of availability, timing, location, inclusions and price.
 
 ## Safety/Legal Note
 
-- Helicopter and transport services must be through licensed providers.
-- Do not imply AskSantorini.ai operates transport or event services.
+- Transport and boat services should be through licensed local providers.
+- Do not imply AskMykonos.ai operates transport, boat or event services.
 - Do not guarantee availability.
 
 ## Good Answer Pattern

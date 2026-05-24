@@ -1,54 +1,41 @@
-# Transport in Santorini
+# Transport in Mykonos
 
 Purpose:
-Help visitors understand how to move around Santorini.
+Help visitors understand how to move around Mykonos.
 
 Core bot rule:
 Answer first. Recommend second. Sell third.
 
 ## Main Options
 
-- Bus: budget-friendly, useful between main areas, schedules change by season.
-- Taxi: convenient but limited availability in high season.
-- Private transfer: easier for airport, port, late night, families or luggage.
-- Rental car/ATV: flexibility, but parking and road confidence matter.
-- Walking: good in Fira/Firostefani/Imerovigli caldera areas, not for all routes.
-- Helicopter/premium transfers: only through licensed providers, for premium needs.
+- Bus: budget-friendly, useful between Mykonos Town / Chora, beaches and Ano Mera; schedules change by season.
+- Taxi: convenient but limited availability, especially late night and high season.
+- Private transfer: easier for airport, new port, old port, late night, families or luggage.
+- Rental car/ATV: flexible, but parking, narrow roads, wind and driving confidence matter.
+- Walking: good inside Mykonos Town / Chora, not realistic for most beach or port routes.
+- Sea bus / water taxi: useful for some port or beach connections when operating; verify locally.
 
 ## Common Routes
 
-- Fira to Oia: bus, taxi, private transfer, rental vehicle.
-- Airport to hotel: taxi, private transfer, or rental car.
-- Port to hotel: private transfer recommended if there is luggage or time pressure.
-- Beaches: depends heavily on starting point.
+- Airport to hotel: taxi, private transfer, bus when suitable, or rental car.
+- New port to Mykonos Town / Chora: sea bus, taxi, private transfer or seasonal bus options.
+- Old port to Mykonos Town / Chora: often walkable depending on luggage and exact destination.
+- Mykonos Town / Chora to Ano Mera: bus, taxi, private transfer or rental vehicle.
+- Beaches: depends heavily on starting point, season, wind and time of day.
 
 ## How To Answer Transport Questions
 
 - Ask starting point and destination if missing.
-- Mention verification for bus schedules.
+- Mention verification for bus schedules and sea bus / water taxi operation.
 - Avoid exact times unless live source exists.
-- Suggest private transfer when the visitor has luggage, late arrival or tight timing.
+- Suggest private transfer when the visitor has luggage, late arrival, tight timing or a port/airport connection.
 - Mention driving confidence and parking when suggesting rentals.
 
-## Known transfer partner
+## Partner Guidance
 
-Avantgarde Transfers is a local partner option for private transfers, airport/port transfers, premium transfers and exclusive tours in Santorini.
+No Mykonos-specific transfer partner is configured in these local knowledge files.
 
-Contact:
-Phone: +30 6944 541253
-Email: info@avantgardetransfers.gr
-Website: https://www.avantgardetransfers.gr
-
-Use only when relevant:
-- airport or port transfer
-- hotel transfer
-- private transfer
-- premium transport
-- visitor wants comfort
-- visitor has luggage
-- visitor asks how to get to Oia/Fira/beaches and wants an easy option
-
-Do not push it in unrelated answers.
+If a visitor asks for a provider, give neutral guidance about choosing licensed local providers and advise them to confirm availability, pickup point, timing and price directly.
 
 ## Do Not Invent
 
@@ -56,3 +43,4 @@ Do not push it in unrelated answers.
 - taxi prices
 - private transfer prices
 - availability
+- provider names

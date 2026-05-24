@@ -1,25 +1,25 @@
-# Sunsets in Santorini
+# Sunsets in Mykonos
 
 Purpose:
-Help visitors choose sunset spots without defaulting only to Oia.
+Help visitors choose sunset spots without defaulting only to the busiest areas.
 
 Core bot rule:
 Answer first. Recommend second. Sell third.
 
 ## Core Guidance
 
-- Oia is iconic but usually very crowded.
-- Imerovigli and Firostefani are calmer caldera-view alternatives.
-- Akrotiri Lighthouse can be a good option if the visitor has transport.
-- Fira/Firostefani caldera walk can work well for flexible sunset viewing.
-- Sunset catamaran cruise can be a premium, relaxed alternative to standing in crowds.
+- Little Venice and the Windmills are iconic but usually busy.
+- Agios Ioannis can be calmer and romantic, especially for a west-facing sunset mood.
+- Armenistis Lighthouse can be a strong scenic option if the visitor has transport.
+- Mykonos Town / Chora works well for visitors who want sunset plus dinner, drinks or a walk.
+- A sunset boat experience around Mykonos, Delos or Rhenia can be a premium alternative when sea conditions allow.
 
 ## How To Answer Sunset Questions
 
-- If the visitor wants iconic: mention Oia, with a crowd warning.
-- If the visitor wants quiet: suggest Imerovigli, Firostefani, or Akrotiri Lighthouse.
-- If the visitor wants romantic or premium: suggest a catamaran, private dinner, photographer, or proposal setup.
-- If the visitor has no car: recommend easy access areas.
+- If the visitor wants iconic: mention Little Venice and the Windmills, with a crowd warning.
+- If the visitor wants quieter: suggest Agios Ioannis or Armenistis Lighthouse.
+- If the visitor wants romantic or premium: suggest a boat experience, private dinner, photographer or proposal setup.
+- If the visitor has no car: recommend easy access from Mykonos Town / Chora or a transfer.
 - Keep the answer practical and mood-based.
 
 ## Do Not Invent

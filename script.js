@@ -880,7 +880,10 @@ async function sendMessage(text) {
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        message: cleanText
+        message: cleanText,
+        destination: "Mykonos",
+        brand: "AskMykonos.ai",
+        language: currentLanguage
       })
     });
 

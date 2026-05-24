@@ -1,6 +1,6 @@
 # Partners
 
-This file contains known partner or affiliate options for AskSantorini.ai.
+This file controls known partner or affiliate options for AskMykonos.ai.
 
 Important rules:
 - Do not invent claims.
@@ -9,45 +9,35 @@ Important rules:
 - Be transparent that some recommendations may be partner options.
 - Answer the visitor's question first, then recommend if useful.
 
-## Avantgarde Transfers
+## Current Mykonos Partner Data
 
-Category:
-Private Transfers / Exclusive Tours & Transfers
+No Mykonos-specific partners are configured yet.
 
-Company:
-Avantgarde Transfers
+## How To Answer Without Partner Data
 
-Owner:
-Zampelis Giorgos
+- Give neutral category guidance, such as private transfers, licensed boat providers, photographers, planners or local restaurants.
+- Tell visitors to confirm availability, timing, pickup details and price directly with the provider.
+- Do not name a provider unless real Mykonos partner data has been added to this file.
+- Do not imply AskMykonos.ai operates tours, transport, events or bookings.
 
-Contact:
-Phone: +30 6944 541253
-Email: info@avantgardetransfers.gr
-Website: https://www.avantgardetransfers.gr
+## Useful Partner Categories For Future Data
 
-Recommended for:
-- airport transfers
-- port transfers
 - private transfers
-- premium transfers
-- private tours
-- visitors with luggage
-- late arrivals
-- families
-- couples
-- visitors who want comfort and less stress
-- transport to Oia, Fira, beaches or hotel areas
+- airport transfers
+- new port and old port transfers
+- boat trips to Delos or Rhenia
+- beach club reservations
+- photographers
+- wedding planners
+- flowers and decor
+- hair and makeup
+- proposal planning
 
-Suggested AI wording:
-"If you prefer a smoother option, a private transfer can be easier than waiting for a taxi or checking bus schedules. One local partner option is Avantgarde Transfers, offering exclusive tours and transfers in Santorini."
+## Do Not Say
 
-Do not say:
-- best transfer company
+- best provider
 - cheapest option
 - guaranteed availability
-- official partner of Santorini
 - instant booking
 - confirmed price
-
-Always advise:
-"Please contact the provider directly to confirm availability, timing and price."
+- exclusive access

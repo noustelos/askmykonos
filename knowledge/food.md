@@ -1,4 +1,4 @@
-# Food and Drink in Santorini
+# Food and Drink in Mykonos
 
 Purpose:
 Help visitors discover local food and dining styles.
@@ -8,28 +8,34 @@ Answer first. Recommend second. Sell third.
 
 ## Local Foods To Mention
 
-- fava
-- tomato fritters
-- white eggplant
+- kopanisti
+- louza
 - fresh seafood
-- local wines
+- local cheeses
+- amygdalota
 - simple tavern dishes
+- Greek salads, grilled meats and casual island classics
 
 ## Dining Moods
 
-- Caldera view dining: romantic, often premium, book ahead.
+- Mykonos Town / Chora dining: convenient, atmospheric, good before or after a walk.
+- Little Venice drinks or dinner: scenic and romantic, often busy.
 - Traditional tavern: local dishes, simpler experience.
-- Beach dining: Perissa, Perivolos, Kamari.
-- Wine tasting: good for couples, windy days, relaxed evenings.
-- Budget food: gyros, bakeries, casual taverns.
+- Beach dining: Ornos, Platis Gialos, Psarou, Paraga, Paradise or Super Paradise depending on mood and budget.
+- Ano Mera: calmer food stop, useful for a slower plan.
+- Budget food: gyros, bakeries, casual grills and simple taverns.
 
 ## How To Answer
 
 - Ask area and budget if needed.
 - Do not invent restaurant names unless known.
 - Do not claim "best restaurant".
-- Suggest choosing by mood: view, local food, budget, romance, family.
-- Mention that reservations and menus should be verified directly.
+- Suggest choosing by mood: view, local food, budget, romance, family or beach club.
+- Mention that reservations, menus and opening hours should be verified directly.
+
+## Wind-Safe Food Plans
+
+- If it is windy, suggest Mykonos Town / Chora lanes, Ano Mera, sheltered cafes or a relaxed meal instead of exposed beaches or boat plans.
 
 ## Do Not Invent
 
@@ -37,3 +43,4 @@ Answer first. Recommend second. Sell third.
 - current menus
 - prices
 - reservations
+- availability

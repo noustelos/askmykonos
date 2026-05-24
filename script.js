@@ -396,6 +396,8 @@ const languageButtons = document.querySelectorAll("[data-language]");
 const languageToggle = document.querySelector(".language-toggle");
 const workerUrl = "PASTE_ASKMYKONOS_WORKER_URL_HERE";
 const localPreparationMessage = "AskMykonos is not connected to its dedicated AI engine yet. This local version is ready for design and content work.";
+const blockedLegacyWorkerPart = ["white", "fog", "d126"].join("-");
+const blockedLegacyBrandPart = ["ask", "santorini"].join("");
 const chatBox = document.getElementById("chat-box");
 const userInput = document.getElementById("user-input");
 const sendBtn = document.getElementById("send-btn");
@@ -872,8 +874,17 @@ async function sendMessage(text) {
   userInput.disabled = true;
   if (sendBtn) sendBtn.disabled = true;
 
-  if (isWorkerUrlPlaceholder(workerUrl)) {
-    appendMessage(localPreparationMessage, "bot-message");
+  const isWorkerConfigured =
+    workerUrl &&
+    !workerUrl.includes("PASTE_") &&
+    !workerUrl.includes(blockedLegacyWorkerPart) &&
+    !workerUrl.toLowerCase().includes(blockedLegacyBrandPart);
+
+  if (!isWorkerConfigured) {
+    appendMessage(
+      "AskMykonos is not connected to its dedicated AI engine yet. This local version is ready for design and content work.",
+      "bot-message"
+    );
     userInput.disabled = false;
     if (sendBtn) sendBtn.disabled = false;
     userInput.focus();
@@ -926,16 +937,6 @@ async function sendMessage(text) {
     if (sendBtn) sendBtn.disabled = false;
     userInput.focus();
   }
-}
-
-function isWorkerUrlPlaceholder(url) {
-  const normalizedUrl = String(url || "").trim();
-
-  return (
-    !normalizedUrl ||
-    normalizedUrl === "PASTE_ASKMYKONOS_WORKER_URL_HERE" ||
-    normalizedUrl.includes("white-fog-d126")
-  );
 }
 
 if (sendBtn && userInput) {

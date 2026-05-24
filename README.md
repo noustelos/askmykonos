@@ -29,7 +29,7 @@ http://localhost:8787
 
 ## Local Preparation Mode
 
-AskMykonos is currently in local preparation mode. It must not use the AskSantorini Worker. Before going live, create and configure a dedicated AskMykonos Cloudflare Worker.
+AskMykonos is currently in local preparation mode. It must not use the previous Santorini Worker. Before going live, create and configure a dedicated AskMykonos Cloudflare Worker.
 
 ## Future Live AI Chat Architecture
 

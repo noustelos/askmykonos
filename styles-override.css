@@ -120,7 +120,7 @@
 .chat-card::after {
   content: "";
   position: absolute;
-  inset: -42px -52px auto auto;
+  inset: -42px 0 auto auto;
   z-index: -1;
   width: min(300px, 70%);
   height: 260px;
@@ -1097,4 +1097,13 @@ body::after {
     radial-gradient(circle at 88% 10%, rgba(246, 193, 94, 0.32), transparent 34%),
     radial-gradient(circle at 8% 100%, rgba(142, 227, 239, 0.24), transparent 32%),
     linear-gradient(140deg, rgba(11, 79, 108, 0.97), rgba(27, 138, 143, 0.9));
+}
+
+.hero::before,
+.questions-section::after,
+.how-section::before,
+.partners-section::before,
+.network-section::before {
+  left: 0;
+  right: 0;
 }

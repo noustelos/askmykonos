@@ -15,7 +15,7 @@ Answer first. Recommend second. Sell third.
 - Paradise and Super Paradise: party-oriented, better for nightlife and beach club mood.
 - Agios Ioannis: calmer sunset-facing option, useful for couples and relaxed plans.
 - Agios Sostis: quieter, less organized, better for visitors with transport and simple expectations.
-- Fokos: remote and quiet, best with a car or private transfer; check road and wind comfort.
+- Fokos: remote and quiet, easier with a car or private transfer; check road and wind comfort.
 
 ## Wind-Safe Thinking
 

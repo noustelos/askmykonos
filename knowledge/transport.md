@@ -9,7 +9,7 @@ Answer first. Recommend second. Sell third.
 ## Main Options
 
 - Bus: budget-friendly, useful between Mykonos Town / Chora, beaches and Ano Mera; schedules change by season.
-- Taxi: convenient but limited availability, especially late night and high season.
+- Taxi: convenient, but availability can be limited, especially late night and in high season.
 - Private transfer: easier for airport, new port, old port, late night, families or luggage.
 - Rental car/ATV: flexible, but parking, narrow roads, wind and driving confidence matter.
 - Walking: good inside Mykonos Town / Chora, not realistic for most beach or port routes.

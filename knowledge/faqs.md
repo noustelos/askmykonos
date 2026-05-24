@@ -7,7 +7,7 @@ Answer first. Recommend second. Sell third.
 
 Ask for location, time available and mood. Offer a simple plan that can work without overloading the visitor: Mykonos Town / Chora, one beach, food, sunset or a boat/culture option.
 
-## Best Sunset Spot?
+## Good Sunset Spot?
 
 Little Venice and the Windmills are classic and crowded. Agios Ioannis is calmer. Armenistis Lighthouse can work well with transport. A sunset boat experience is a premium alternative when sea conditions allow.
 
@@ -19,7 +19,7 @@ Suggest Mykonos Town / Chora, Ano Mera, museums, shopping, food, sheltered cafes
 
 From Mykonos Town / Chora: bus, taxi, private transfer or rental vehicle. Recommend verifying the current bus schedule.
 
-## Best Beach For Families?
+## Good Beach For Families?
 
 Ornos and Platis Gialos are usually practical choices. Agios Ioannis can also work for a calmer mood depending on where the visitor is staying and the wind.
 

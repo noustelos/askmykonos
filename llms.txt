@@ -1,0 +1,47 @@
+# AskMykonos.ai
+
+> A free, live AI travel guide for Mykonos, Greece. Ask in plain language — in English,
+> Greek, or your own language — about beaches, sunsets, boat trips, food, transfers and
+> day plans, and get a few relevant suggestions with the details that matter, instead of
+> ten browser tabs. No app, no sign-up, no ads.
+
+AskMykonos.ai is an independent visitor guide and is not an official tourism authority.
+It is part of the "ASK AI Travel Network" (sibling site: AskSantorini.ai). AI-generated
+answers may be incomplete or outdated; schedules, prices, availability and safety-sensitive
+details should be verified with the relevant provider.
+
+## Core pages
+
+- [Home / live AI chat](https://askmykonos.ai/): Ask the island anything; starter questions
+  for sunsets, beaches, Delos, windy days, dinner and family plans.
+- [Mykonos Travel FAQ (English)](https://askmykonos.ai/faq.html): Quick answers on sunsets,
+  windy-day plans, beaches, getting around and whether you need a car.
+- [Mykonos Travel FAQ (Greek)](https://askmykonos.ai/faq-el.html): Οι ίδιες συχνές
+  ερωτήσεις για τη Μύκονο στα ελληνικά.
+
+## Common questions answered
+
+- Where is the best sunset spot? Little Venice and the windmills (Kato Mili) are the classic
+  and busiest; Agios Ioannis is calmer; Armenistis Lighthouse is quieter with transport;
+  a sunset boat cruise is a premium option when conditions allow.
+- What to do on a windy day? Mykonos gets the meltemi wind — head inland to Chora and Ano
+  Mera, wine tastings, long lunches and museums; more southern beaches are better protected.
+- Best family beaches? Ornos and Platis Gialos are the most practical; Agios Ioannis for a
+  quieter mood, depending on where you stay and the day's wind.
+- Getting around / do I need a car? Buses connect Chora with the main beaches and Ano Mera;
+  taxis are limited (book transfers ahead in peak season); ATV or car helps for remote
+  beaches like Fokos. A car is optional for simple, bus-friendly itineraries.
+
+## Concierge & partners
+
+- [Concierge services](https://askmykonos.ai/#concierge): Ask about photographers, wedding
+  and ceremony planners, flowers and setups, and premium transfers with local context.
+- [Become a partner](mailto:partners@askmykonos.ai): For hotels, tours and local businesses
+  that want to be surfaced when a visitor's question naturally calls for them.
+
+## Legal & contact
+
+- [Privacy Policy](https://askmykonos.ai/privacy-policy.html): How data is processed
+  (AI chat via Cloudflare Worker + Google Gemini, contact email, cookies, user rights).
+- [Contact](mailto:hello@askmykonos.ai): General questions and partnerships.
+- [Instagram](https://www.instagram.com/askmykonosai/): Updates.

@@ -7,7 +7,7 @@ The site includes the live chat interface, useful starter questions, partner CTA
 ## Project Structure
 
 - `index.html` - page structure, SEO metadata, Open Graph tags, content sections
-- `styles.css` / `styles.min.css` - responsive styling, CSS variables, layout, cards, forms, modals
+- `styles.css` - responsive styling, CSS variables, layout, cards, forms, modals
 - `script.js` / `script.min.js` - starter question interactions, contact mailto workflow, privacy/terms modals, live chat
 - `robots.txt` / `sitemap.xml` - search engine crawl directives
 - `_headers` - Cloudflare Pages security headers

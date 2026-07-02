@@ -1888,6 +1888,60 @@ section[id] {
 }
 
 /* --------------------------------------------------------------------------
+   FAQ page
+   -------------------------------------------------------------------------- */
+
+.faq-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 18px;
+  color: var(--brass);
+  font-size: 0.86rem;
+  font-weight: 600;
+}
+
+.faq-back:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.faq-content {
+  display: grid;
+  gap: 14px;
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  padding: clamp(22px, 3.5vw, 32px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--parchment);
+  box-shadow: var(--shadow-soft);
+}
+
+.faq-item h2 {
+  margin-bottom: 10px;
+  font-size: clamp(1.2rem, 2.4vw, 1.55rem);
+}
+
+.faq-item p {
+  margin-bottom: 0;
+  color: #4b463b;
+}
+
+.faq-item p + p {
+  margin-top: 12px;
+}
+
+.faq-cta-line {
+  max-width: 820px;
+  margin: 26px auto 0;
+  text-align: center;
+}
+
+/* --------------------------------------------------------------------------
    Responsive
    -------------------------------------------------------------------------- */
 

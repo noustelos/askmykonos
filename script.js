@@ -1,3 +1,78 @@
+/* --------------------------------------------------------------------------
+   DION — scripted demo persona (no backend; texts are verbatim from
+   dion-script.md: EN = camp/theatrical, EL = clean professional concierge)
+   -------------------------------------------------------------------------- */
+
+const DION_SCRIPT = {
+  en: {
+    greeting: "Dion here — short for Dionysos, and yes, the island is basically my summer palace. Ask me about beaches, sunsets, where to eat, how to move around without a taxi meltdown. I'll make it glamorous. Try to keep up, agápi mou. ✨",
+    sunset: "Ah, the sunset question — everyone's favorite drama. STOP going to Little Venice at 8pm with four thousand strangers, agápi mou. Yes, the windmills are iconic. They're also a scrum. For the same gold sky with room to breathe: Agios Ioannis, facing west, practically posing for you. Or Armenistis Lighthouse — fewer people, more cinema. The sun knows how to make an exit... let it. ✨",
+    catamaran: "Culture AND a swim? Look at you, being efficient. Delos is the real thing — ancient, sacred, licensed guides only, and no, you can't stay the night (the gods are strict about check-out). Pair it with Rhenia next door for the swim — clear water, fewer ruins, more floating. A boat day does both. Confirm the schedule and sea conditions before you commit, though — the meltemi doesn't check your itinerary.",
+    beach: "Depends — are we being social or hiding from our responsibilities? For polished and buzzy: Psarou, where the loungers cost more than my dignity and everyone's people-watching while pretending not to. For actual charm with less production: Agios Sostis — no sunbeds, no fuss, just you and the Aegean behaving beautifully. And if the wind's showing off, go south to Ornos or Platis Gialos. Linen, obviously. Cargo shorts and I are not speaking.",
+    oia: "Ah, the arrival — first impressions matter, and nobody looks glamorous lost at a port. From the new port to Chora: a transfer or taxi is easiest, though taxis here play hard to get in high season. The old port sits closer to Chora — a short hop, sometimes even a walk if your luggage isn't dramatic. Sort your transfer before you land. Arriving flustered is not the vibe.",
+    oneDay: "One day? Ambitious. I respect it. Morning: Chora — get gloriously lost in the whitewashed lanes, find Little Venice and the windmills before the crowds wake up. Midday: one beach, pick your energy — social or serene. Late afternoon: a slow something in Ano Mera if you want the island's quieter face. Then sunset, non-negotiable, somewhere west. One day, done with taste. Now — try to look the part.",
+    windy: "Ah, the meltemi — the island's own drama queen, and it does NOT share a stage. When the north wind performs, you don't fight it, you relocate. Head south: Ornos, Platis Gialos, Psarou — tucked away, calmer water, still fabulous. Or abandon the beach entirely — Ano Mera for a slow lunch, Chora for shopping and pretending you weren't defeated by weather. The wind has opinions. So do we.",
+    food: "Now we're speaking my language. For the classics: kopanisti — the local cheese that bites back — louza, fresh seafood, and almond sweets if you've earned them. For the scene: Chora and Little Venice, drinks with a view, busy and beautiful (and pricey, naturally — you're paying for the AESTHETIC). For something calmer and more authentic, Ano Mera. Then the questionable decisions? Those, agápi mou, are between you and the night. 🍸",
+    family: "Family mode — less sparkle, more logistics, I understand. For calm, shallow water and easy access: Ornos and Platis Gialos are your friends — organized, gentle, close to everything. Agios Ioannis works too, and rewards you with a sunset later. Keep the day simple, stay near amenities, and don't over-schedule — the island's charm is best at half speed. Everyone stays happy. Even you.",
+    catamaranTour: "A sunset on the water — now THAT'S how you exit a day with style. A sunset boat cruise around Mykonos, often toward Delos or Rhenia, is the premium move: gold light, open sea, and someone else steering while you pose. It's a paid experience, and worth it for the drama. Confirm timing, pickup point, and sea conditions with the provider directly — the sea makes its own schedule.",
+    delosTour: "Delos — the sacred one. An entire ancient city on an island, birthplace of Apollo, and no one lives there now except history and lizards. You go by boat, you tour with a licensed guide (non-negotiable — it's protected), and you leave before sunset. It's culture with a capital everything. Check the boat schedule and guide availability before you plan around it.",
+    transfer: "Smart — arriving flustered is not the look. A private transfer from the airport or port takes the taxi-roulette out of your day (and taxis here genuinely play hard to get in season). Airport, new port, old port — all sortable in advance. Arrange it before you arrive, step off looking composed, and let someone else deal with the luggage. That's the energy.",
+    beachClub: "A beach club day — my natural habitat. The polished scene lives at Psarou and Paraga; Paradise and Super Paradise bring the party energy if that's your confession. Loungers get claimed early and the good ones are a commitment, so plan ahead. Bring less than you think and more attitude than you need. And linen. Always linen.",
+    photographer: "A photographer — because if it isn't documented, did the glamour even happen? For couples, honeymoons, proposals, or golden-hour portraits, a local photographer knows the light and the spots that make you look effortless (the effort is theirs). I can point you to the category — you'll want to confirm the details, dates, and style directly with the provider. Now go rehearse your candid laugh.",
+    wedding: "STOP — this is the good stuff. A proposal or wedding on Mykonos: sunset light, sea behind you, and the whole island playing set designer. You'll want a planner for the logistics and a photographer to catch the moment before the happy tears ruin everyone's composure. I can guide you to the right categories — the specifics you'll confirm directly with each provider. Deep breath, agápi mou. It's going to be beautiful.",
+    quietSide: "The quieter side — so there IS depth to you. Ano Mera is the island's calmer heart: an inland village square, slower lunches, a monastery, life at a human pace instead of a runway. It's Mykonos with its shoes off. Pair it with a remote beach like Fokos if you want the full escape — though you'll need transport, and the wind gets a vote. Serenity, arranged.",
+    carRental: "Do you NEED a car? Depends how far your ambitions roam. For Chora and the nearby beaches, no — buses run, transfers exist, and parking in season is its own tragedy. But for the remote corners — Fokos, the hidden coves — a car or ATV gives you freedom the bus won't. Weigh it: convenience versus the parking drama. Choose wisely, and either way, don't drive in heels.",
+    fallback: "Hmm — that one's playing hard to get, even with me. This is a little preview of what the full AskMykonos can do, so I keep to what I know: beaches, sunsets, food, getting around, the occasional elegant rescue. Try one of those — or, if you fancy the whole fabulous concierge for your own island, someone's listening. ✨",
+    emergency: "First — are you safe right now? For any emergency in Greece, call 112 (European emergency number). For medical help, 166; police, 100; coast guard, 108. If this is urgent, contact them now — I can wait. Once you're safe, I'm here to help with whatever comes next."
+  },
+  el: {
+    greeting: "Καλησπέρα, είμαι ο Dion — ο ψηφιακός σας concierge για τη Μύκονο. Μπορώ να βοηθήσω με παραλίες, ηλιοβασιλέματα, φαγητό, μετακινήσεις και πρακτικά ζητήματα. Ρωτήστε με ό,τι θέλετε.",
+    sunset: "Το Little Venice και οι Μύλοι είναι τα κλασικά σημεία, αλλά έχουν πολύ κόσμο κατά τη δύση. Για πιο ήρεμη θέα προς τα δυτικά, ο Άγιος Ιωάννης είναι εξαιρετική επιλογή. Εναλλακτικά, ο Φάρος Αρμενιστής προσφέρει πανοραμική θέα με λιγότερο πλήθος. Καλή ιδέα να πάτε λίγο πριν τη δύση για καλή θέση.",
+    catamaran: "Ναι, μπορείτε να συνδυάσετε και τα δύο. Η Δήλος είναι σημαντικός αρχαιολογικός χώρος (με αδειούχους ξεναγούς), και η γειτονική Ρήνεια είναι ιδανική για κολύμπι σε καθαρά νερά. Μια ημερήσια εκδρομή με σκάφος καλύπτει και τα δύο. Επιβεβαιώστε τα δρομολόγια και τις καιρικές συνθήκες πριν κλείσετε.",
+    beach: "Εξαρτάται από τη διάθεση. Για οργανωμένη παραλία με beach clubs, η Ψαρού και ο Πλατύς Γιαλός είναι δημοφιλείς. Για κάτι πιο ήσυχο και φυσικό, ο Άγιος Σώστης δεν έχει ξαπλώστρες αλλά έχει ωραία ατμόσφαιρα. Αν φυσάει, προτιμήστε τις νότιες παραλίες (Όρνος, Πλατύς Γιαλός) που είναι πιο προστατευμένες.",
+    oia: "Από το νέο λιμάνι προς τη Χώρα, η πιο βολική επιλογή είναι ένα ιδιωτικό transfer ή ταξί — αν και τα ταξί είναι περιορισμένα στην αιχμή της σεζόν. Το παλιό λιμάνι βρίσκεται πιο κοντά στη Χώρα (μικρή απόσταση, ενίοτε και με τα πόδια). Καλή ιδέα να κανονίσετε τη μετακίνησή σας εκ των προτέρων.",
+    oneDay: "Για μία μέρα: Το πρωί, μια βόλτα στη Χώρα με τα γραφικά σοκάκια, το Little Venice και τους Μύλους (νωρίς, πριν τον κόσμο). Το μεσημέρι, μία παραλία της επιλογής σας. Το απόγευμα, ίσως μια στάση στην Άνω Μερά για την πιο ήσυχη πλευρά του νησιού. Και το ηλιοβασίλεμα κάπου δυτικά. Μια ισορροπημένη μέρα.",
+    windy: "Ο μελτέμι (βόρειος άνεμος) μπορεί να είναι έντονος στη Μύκονο. Τις μέρες με πολύ αέρα, οι νότιες παραλίες (Όρνος, Πλατύς Γιαλός, Ψαρού) είναι πιο προστατευμένες με πιο ήρεμα νερά. Εναλλακτικά, μια βόλτα στην Άνω Μερά για φαγητό ή στη Χώρα για ψώνια είναι καλή ιδέα για μέρα με αέρα.",
+    food: "Για παραδοσιακές γεύσεις, δοκιμάστε κοπανιστή (τοπικό τυρί), λούζα, φρέσκο ψάρι και αμυγδαλωτά. Για ατμόσφαιρα με θέα, η Χώρα και το Little Venice έχουν πολλές επιλογές για φαγητό και ποτό (με ανάλογες τιμές). Για κάτι πιο ήσυχο και αυθεντικό, η Άνω Μερά είναι καλή επιλογή.",
+    family: "Για οικογένειες, οι παραλίες με ήρεμα και ρηχά νερά και εύκολη πρόσβαση είναι ιδανικές — ο Όρνος και ο Πλατύς Γιαλός είναι οργανωμένοι και βολικοί. Ο Άγιος Ιωάννης είναι επίσης καλή επιλογή, με ωραίο ηλιοβασίλεμα. Κρατήστε το πρόγραμμα απλό και κοντά σε παροχές.",
+    catamaranTour: "Μια κρουαζιέρα με σκάφος στο ηλιοβασίλεμα (συχνά προς Δήλο ή Ρήνεια) είναι μια premium εμπειρία με υπέροχο φως και θέα. Είναι πληρωμένη υπηρεσία. Επιβεβαιώστε ώρες, σημείο παραλαβής και θαλάσσιες συνθήκες απευθείας με τον πάροχο.",
+    delosTour: "Η Δήλος είναι σημαντικός αρχαιολογικός χώρος, προσβάσιμος μόνο με σκάφος και με αδειούχο ξεναγό. Η επίσκεψη γίνεται εντός της ημέρας (δεν επιτρέπεται διανυκτέρευση). Επιβεβαιώστε δρομολόγια σκαφών και διαθεσιμότητα ξεναγών εκ των προτέρων.",
+    transfer: "Ένα ιδιωτικό transfer από το αεροδρόμιο ή το λιμάνι είναι η πιο βολική λύση, ειδικά επειδή τα ταξί είναι περιορισμένα στην αιχμή της σεζόν. Καλύπτονται αεροδρόμιο, νέο και παλιό λιμάνι. Κανονίστε το εκ των προτέρων για ομαλή άφιξη.",
+    beachClub: "Για μια μέρα σε beach club, η Ψαρού και η Παράγκα προσφέρουν πιο κομψή ατμόσφαιρα, ενώ ο Παράδεισος και ο Σούπερ Παράδεισος έχουν πιο έντονο, πάρτι κλίμα. Οι ξαπλώστρες πιάνονται νωρίς — καλή ιδέα να κάνετε κράτηση εκ των προτέρων.",
+    photographer: "Ένας τοπικός φωτογράφος (για ζευγάρια, γάμους, προτάσεις γάμου ή πορτρέτα στο χρυσό φως) γνωρίζει τα καλύτερα σημεία και το φως του νησιού. Μπορώ να σας κατευθύνω στην κατηγορία υπηρεσίας — επιβεβαιώστε ημερομηνίες, στυλ και λεπτομέρειες απευθείας με τον πάροχο.",
+    wedding: "Για μια πρόταση γάμου ή γάμο στη Μύκονο, ένας wedding planner βοηθά με την οργάνωση και ένας φωτογράφος καταγράφει τη στιγμή. Το ηλιοβασίλεμα και η θέα στη θάλασσα δημιουργούν ιδανικό σκηνικό. Μπορώ να σας κατευθύνω στις κατηγορίες υπηρεσιών — οι λεπτομέρειες επιβεβαιώνονται με κάθε πάροχο.",
+    quietSide: "Για την πιο ήσυχη πλευρά της Μυκόνου, η Άνω Μερά προσφέρει μια παραδοσιακή πλατεία, ήρεμα γεύματα και ένα μοναστήρι — ζωή σε πιο αργό ρυθμό. Μπορείτε να τη συνδυάσετε με μια απομακρυσμένη παραλία όπως ο Φωκός (χρειάζεται μετακίνηση και εξαρτάται από τον άνεμο).",
+    carRental: "Εξαρτάται από τα σχέδιά σας. Για τη Χώρα και τις κοντινές παραλίες, δεν είναι απαραίτητο — υπάρχουν λεωφορεία και transfers (και το πάρκινγκ είναι δύσκολο στη σεζόν). Για πιο απομακρυσμένα σημεία (π.χ. Φωκός), ένα αυτοκίνητο ή ATV δίνει περισσότερη ελευθερία.",
+    fallback: "Αυτό δεν το καλύπτω σε αυτή την demo έκδοση. Μπορώ να βοηθήσω με παραλίες, ηλιοβασιλέματα, φαγητό, μετακινήσεις και πρακτικά ζητήματα για τη Μύκονο. Δοκιμάστε μία από αυτές τις κατηγορίες. (Πρόκειται για επίδειξη — το πλήρες AskMykonos διατίθεται.)",
+    emergency: "Πρώτα απ' όλα — είστε ασφαλής αυτή τη στιγμή; Για επείγοντα στην Ελλάδα, καλέστε 112 (Ευρωπαϊκός αριθμός έκτακτης ανάγκης). Για ιατρική βοήθεια 166, αστυνομία 100, λιμενικό 108. Αν είναι επείγον, επικοινωνήστε τώρα — μπορώ να περιμένω. Μόλις είστε ασφαλής, είμαι εδώ να βοηθήσω."
+  }
+};
+
+/* Known card-prefill questions (must mirror the data-chat-prefill-* attributes
+   in index.html) — typed input matching maps these to DION_SCRIPT keys. */
+const DION_QUESTIONS = {
+  en: {
+    catamaranTour: "Can you suggest sunset catamaran options in Mykonos?",
+    delosTour: "Tell me about a Delos guided tour.",
+    transfer: "I need an airport or port transfer.",
+    beachClub: "Help me plan a beach club day.",
+    photographer: "Can you arrange a photographer?",
+    wedding: "I'm planning a proposal or wedding.",
+    quietSide: "Show me the quieter side of Mykonos.",
+    carRental: "Do I need to rent a car?"
+  },
+  el: {
+    catamaranTour: "Μπορείς να προτείνεις επιλογές για καταμαράν στο ηλιοβασίλεμα στη Μύκονο;",
+    delosTour: "Πες μου για μια ξενάγηση στη Δήλο.",
+    transfer: "Χρειάζομαι μεταφορά από το αεροδρόμιο ή το λιμάνι.",
+    beachClub: "Βοήθησέ με να οργανώσω μια μέρα σε beach club.",
+    photographer: "Μπορείς να κανονίσεις φωτογράφο;",
+    wedding: "Οργανώνω πρόταση γάμου ή γάμο.",
+    quietSide: "Δείξε μου την πιο ήσυχη πλευρά της Μυκόνου.",
+    carRental: "Χρειάζεται να νοικιάσω αυτοκίνητο;"
+  }
+};
+
 const translations = {
   en: {
     pageTitle: "AskMykonos.ai – Smart, Stylish Mykonos Answers",
@@ -23,7 +98,8 @@ const translations = {
     chatInstructionLine: "Ask anything about Mykonos",
     chatEmptyHelper: "Start with a question",
     chatLanguageNote: "Ask in English, Greek, or your own language.",
-    chatGreeting: "Hi. I can help with Mykonos plans, logistics and the occasional elegant rescue.",
+    chatGreeting: DION_SCRIPT.en.greeting,
+    liveDemoBadge: "Live demo",
     chatPlaceholder: "Ask about beaches, transfers, sunsets...",
     sendButton: "Send",
     thinkingMessage: "Thinking...",
@@ -167,7 +243,8 @@ const translations = {
     chatInstructionLine: "Ρώτησε ό,τι θέλεις για τη Μύκονο",
     chatEmptyHelper: "Ξεκίνα με μια ερώτηση",
     chatLanguageNote: "Ρώτησε στα Αγγλικά, στα Ελληνικά ή στη δική σου γλώσσα.",
-    chatGreeting: "Γεια! Μπορώ να βοηθήσω με παραλίες, μετακινήσεις, ηλιοβασίλεμα, φαγητό και πρακτικό πρόγραμμα.",
+    chatGreeting: DION_SCRIPT.el.greeting,
+    liveDemoBadge: "Ζωντανό demo",
     chatPlaceholder: "Ρώτησε για παραλίες, μετακινήσεις, ηλιοβασίλεμα...",
     sendButton: "Αποστολή",
     thinkingMessage: "Σκέφτομαι...",
@@ -305,7 +382,6 @@ const essentialCookies = document.querySelector("#essential-cookies");
 const languageButtons = document.querySelectorAll("[data-language]");
 const languageToggle = document.querySelector(".language-toggle");
 const workerUrl = "PASTE_ASKMYKONOS_WORKER_URL_HERE";
-const localPreparationMessage = "AskMykonos is not connected to its dedicated AI engine yet. This local version is ready for design and content work.";
 const chatBox = document.getElementById("chat-box");
 const userInput = document.getElementById("user-input");
 const sendBtn = document.getElementById("send-btn");
@@ -572,12 +648,19 @@ const scrollToAskAi = (link) => {
 
   const prefill = link?.dataset[`chatPrefill${currentLanguage === "el" ? "El" : "En"}`];
 
-  if (prefill && userInput) {
+  if (prefill && userInput && !isDionReplying) {
     userInput.value = prefill;
+
+    // Cards with a prefill question auto-send into the scripted engine
+    // after a beat, so the visitor sees the question before it "goes".
+    window.setTimeout(() => {
+      sendMessage(prefill);
+    }, DION_AUTOSEND_MS);
   }
 
   const targetTop = getAskAiScrollTop(chatTarget);
-  window.scrollTo({ top: targetTop, behavior: "smooth" });
+  const scrollBehavior = REDUCED_MOTION_QUERY.matches ? "auto" : "smooth";
+  window.scrollTo({ top: targetTop, behavior: scrollBehavior });
 
   window.setTimeout(() => {
     const distance = Math.abs(chatTarget.getBoundingClientRect().top);
@@ -646,7 +729,22 @@ questionCards.forEach((card, index) => {
   card.setAttribute("aria-pressed", "false");
 
   card.addEventListener("click", () => {
-    showAnswerPreview(card);
+    if (isDionReplying) return;
+
+    const question = translations[currentLanguage].questions[card.dataset.questionKey];
+    if (!question) return;
+
+    // Keep the answer-preview panel in sync (no scroll), then run the chat
+    // flow: prefill so the question is visible for a beat, scroll to the
+    // chat card, auto-send into the Dion scripted engine.
+    showAnswerPreview(card, false);
+
+    if (userInput) userInput.value = question;
+    scrollToAskAi(null);
+
+    window.setTimeout(() => {
+      sendMessage(question);
+    }, DION_AUTOSEND_MS);
   });
 
   if (index === 0) {
@@ -716,11 +814,151 @@ function appendMessage(text, className) {
   return id;
 }
 
+/* --------------------------------------------------------------------------
+   Dion scripted engine — resolve, typing dots, word-by-word reveal
+   -------------------------------------------------------------------------- */
+
+const REDUCED_MOTION_QUERY = window.matchMedia("(prefers-reduced-motion: reduce)");
+const FINE_POINTER_QUERY = window.matchMedia("(hover: hover) and (pointer: fine)");
+const DION_TYPING_MS = 800;
+const DION_WORD_MS = 45;
+const DION_AUTOSEND_MS = 300;
+let isDionReplying = false;
+
+const normalizeChatText = (text) =>
+  String(text || "")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[\s;;.!?…]+$/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+
+const EMERGENCY_PATTERNS_EN = [
+  /\b(emergency|urgent|help|injured|injury|accident|theft|stolen|robbed|medical|hospital|ambulance|police|danger|dangerous|drowning)\b/,
+  /lost .{0,12}passport/,
+  /passport .{0,12}(lost|stolen|gone)/
+];
+
+const EMERGENCY_STEMS_EL = [
+  "επειγον", "βοηθεια", "ατυχημα", "κλοπη", "εκλεψαν", "χαθηκε", "εχασα",
+  "τραυματ", "νοσοκομειο", "ασθενοφορο", "αστυνομια", "κινδυν", "πνιγ"
+];
+
+const isEmergencyText = (normalized) =>
+  EMERGENCY_PATTERNS_EN.some((pattern) => pattern.test(normalized)) ||
+  EMERGENCY_STEMS_EL.some((stem) => normalized.includes(stem));
+
+/* Exact-match table: every known question (both languages) → Dion key.
+   Known questions are checked BEFORE the emergency keywords on purpose:
+   they are our own scripted texts (one contains the word "help"), and a
+   real emergency never arrives as an exact known question. */
+const matchKnownQuestion = (normalized) => {
+  const languages = ["en", "el"];
+
+  for (const lang of languages) {
+    const chipQuestions = translations[lang].questions;
+    for (const key of Object.keys(chipQuestions)) {
+      if (normalizeChatText(chipQuestions[key]) === normalized) return key;
+    }
+
+    const prefillQuestions = DION_QUESTIONS[lang];
+    for (const key of Object.keys(prefillQuestions)) {
+      if (normalizeChatText(prefillQuestions[key]) === normalized) return key;
+    }
+  }
+
+  return null;
+};
+
+const resolveDionReply = (text) => {
+  const script = DION_SCRIPT[currentLanguage] || DION_SCRIPT.en;
+  const normalized = normalizeChatText(text);
+
+  const knownKey = matchKnownQuestion(normalized);
+  if (knownKey && script[knownKey]) return script[knownKey];
+
+  if (isEmergencyText(normalized)) return script.emergency;
+
+  return script.fallback;
+};
+
+const scrollChatToBottom = () => {
+  if (chatBox) chatBox.scrollTop = chatBox.scrollHeight;
+};
+
+const showTypingDots = () => {
+  const bubble = document.createElement("div");
+  bubble.className = "bot-message typing";
+  bubble.setAttribute("aria-hidden", "true");
+
+  for (let i = 0; i < 3; i += 1) {
+    const dot = document.createElement("span");
+    dot.className = "typing-dot";
+    bubble.appendChild(dot);
+  }
+
+  chatBox.appendChild(bubble);
+  scrollChatToBottom();
+  return bubble;
+};
+
+const revealBotReply = (text, onDone) => {
+  const msgDiv = document.createElement("div");
+  msgDiv.className = "bot-message";
+
+  const words = String(text).split(" ");
+  words.forEach((word, index) => {
+    const span = document.createElement("span");
+    span.className = "reveal-word";
+    span.textContent = index < words.length - 1 ? word + " " : word;
+    msgDiv.appendChild(span);
+  });
+
+  chatBox.appendChild(msgDiv);
+  scrollChatToBottom();
+
+  const spans = msgDiv.children;
+  let revealed = 0;
+
+  const timer = window.setInterval(() => {
+    if (revealed < spans.length) {
+      spans[revealed].classList.add("is-visible");
+      revealed += 1;
+      if (revealed % 5 === 0) scrollChatToBottom();
+    }
+
+    if (revealed >= spans.length) {
+      window.clearInterval(timer);
+      scrollChatToBottom();
+      if (onDone) onDone();
+    }
+  }, DION_WORD_MS);
+};
+
+const deliverDionReply = (replyText, onDone) => {
+  const startReveal = () => revealBotReply(replyText, onDone);
+
+  if (REDUCED_MOTION_QUERY.matches) {
+    // Reduced motion: skip the pulsing dots, keep the word-by-word reveal
+    // (the reveal is the demo concept, not a vestibular effect).
+    startReveal();
+    return;
+  }
+
+  const dots = showTypingDots();
+  window.setTimeout(() => {
+    dots.remove();
+    startReveal();
+  }, DION_TYPING_MS);
+};
+
 async function sendMessage(text) {
   const cleanText = String(text || "").trim();
 
   if (!cleanText) return;
   if (!chatBox || !userInput) return;
+  if (isDionReplying) return;
 
   const copy = translations[currentLanguage];
 
@@ -737,13 +975,17 @@ async function sendMessage(text) {
     !workerUrl.includes("workers.dev");
 
   if (!isWorkerConfigured) {
-    appendMessage(
-      "AskMykonos is not connected to its dedicated AI engine yet. This local version is ready for design and content work.",
-      "bot-message"
-    );
-    userInput.disabled = false;
-    if (sendBtn) sendBtn.disabled = false;
-    userInput.focus();
+    isDionReplying = true;
+
+    deliverDionReply(resolveDionReply(cleanText), () => {
+      isDionReplying = false;
+      userInput.disabled = false;
+      if (sendBtn) sendBtn.disabled = false;
+      if (FINE_POINTER_QUERY.matches) {
+        userInput.focus({ preventScroll: true });
+      }
+    });
+
     return;
   }
 

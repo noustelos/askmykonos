@@ -607,6 +607,23 @@ h3 {
   white-space: nowrap;
 }
 
+.demo-badge {
+  display: inline-flex;
+  align-items: center;
+  margin-left: auto;
+  padding: 4px 10px;
+  border: 1px solid rgba(239, 90, 139, 0.45);
+  border-radius: 999px;
+  background: rgba(239, 90, 139, 0.12);
+  color: #f78fb2;
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
 .status-dot,
 .preview-status-dot {
   position: relative;
@@ -726,6 +743,56 @@ h3 {
 .chat-box .bot-message.loading {
   color: var(--muted);
   font-style: italic;
+}
+
+/* Dion typing dots — opacity-only pulse, skipped entirely under
+   prefers-reduced-motion (the JS goes straight to the reveal) */
+.chat-box .bot-message.typing {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  min-height: 0;
+  padding: 15px 18px;
+}
+
+.typing-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--gold-bright);
+  opacity: 0.25;
+  animation: dionTyping 900ms ease-in-out infinite;
+}
+
+.typing-dot:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.typing-dot:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+@keyframes dionTyping {
+  0%,
+  100% {
+    opacity: 0.25;
+  }
+
+  50% {
+    opacity: 0.9;
+  }
+}
+
+/* Word-by-word reveal — opacity only, cheap on old hardware. The reveal
+   pacing itself is JS-driven, so it still plays under reduced motion
+   (the per-word fade simply becomes instant). */
+.chat-box .bot-message .reveal-word {
+  opacity: 0;
+  transition: opacity 180ms ease;
+}
+
+.chat-box .bot-message .reveal-word.is-visible {
+  opacity: 1;
 }
 
 .chat-box .bot-message.error {

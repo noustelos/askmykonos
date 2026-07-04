@@ -29,7 +29,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=night1">
+    <link rel="stylesheet" href="styles.css?v=dion1">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -172,12 +172,13 @@
           <div class="chat-card-top">
             <span class="status-dot" aria-hidden="true"></span>
             <span data-i18n="previewMode">Ask the Island</span>
+            <span class="demo-badge" data-i18n="liveDemoBadge">Live demo</span>
           </div>
           <p class="chat-instruction-line" data-i18n="chatInstructionLine">Ask anything about Mykonos</p>
           <p class="chat-language-note" data-i18n="chatLanguageNote">Ask in English, Greek, or your own language.</p>
           <div id="chat-box" class="chat-thread chat-box" aria-live="polite">
             <p class="chat-empty-helper" data-i18n="chatEmptyHelper">Start with a question</p>
-            <div class="bot-message" data-i18n="chatGreeting">Hi. I can help with Mykonos plans, logistics and the occasional elegant rescue.</div>
+            <div class="bot-message" data-i18n="chatGreeting">Dion here — short for Dionysos, and yes, the island is basically my summer palace. Ask me about beaches, sunsets, where to eat, how to move around without a taxi meltdown. I'll make it glamorous. Try to keep up, agápi mou. ✨</div>
           </div>
           <div class="input-area">
             <input type="text" id="user-input" data-i18n-attr="placeholder:chatPlaceholder" placeholder="Ask about beaches, transfers, sunsets..." autocomplete="off">
@@ -278,19 +279,19 @@
             <span class="tour-label" data-i18n="tourLabelClassic">Relaxed</span>
             <h3 data-i18n="tourVolcanoTitle">Curious about Delos?</h3>
             <p data-i18n="tourVolcanoText">Ask whether Delos, Rhenia and swimming stops fit your day.</p>
-            <a href="#ask-ai" class="tour-status tour-card-cta ask-ai-link" data-chat-prefill-en="What should I know about Delos and Rhenia tours in Mykonos?" data-chat-prefill-el="Τι πρέπει να ξέρω για εκδρομές στη Δήλο και τη Ρήνεια από τη Μύκονο;" data-i18n="tourStatus">Ask AI for options</a>
+            <a href="#ask-ai" class="tour-status tour-card-cta ask-ai-link" data-chat-prefill-en="Tell me about a Delos guided tour." data-chat-prefill-el="Πες μου για μια ξενάγηση στη Δήλο." data-i18n="tourStatus">Ask AI for options</a>
           </article>
           <article class="tour-card">
             <span class="tour-label" data-i18n="tourLabelRomantic">Romantic</span>
             <h3 data-i18n="tourWineTitle">Want a slow wine route?</h3>
             <p data-i18n="tourWineText">Local flavors, island wines and an easy evening rhythm.</p>
-            <a href="#ask-ai" class="tour-status tour-card-cta ask-ai-link" data-chat-prefill-en="Can you suggest wine tasting ideas in Mykonos?" data-chat-prefill-el="Μπορείς να προτείνεις ιδέες για wine tasting στη Μύκονο;" data-i18n="tourStatus">Ask AI for options</a>
+            <a href="#ask-ai" class="tour-status tour-card-cta ask-ai-link" data-chat-prefill-en="Show me the quieter side of Mykonos." data-chat-prefill-el="Δείξε μου την πιο ήσυχη πλευρά της Μυκόνου." data-i18n="tourStatus">Ask AI for options</a>
           </article>
           <article class="tour-card">
             <span class="tour-label" data-i18n="tourLabelPractical">Practical</span>
             <h3 data-i18n="tourTransfersTitle">Need the easiest arrival?</h3>
             <p data-i18n="tourTransfersText">Ask about simple airport, port and day-plan transfers.</p>
-            <a href="#ask-ai" class="tour-status tour-card-cta ask-ai-link" data-chat-prefill-en="What is the easiest transfer option in Mykonos?" data-chat-prefill-el="Ποια είναι η πιο εύκολη επιλογή μεταφοράς στη Μύκονο;" data-i18n="tourStatus">Ask AI for options</a>
+            <a href="#ask-ai" class="tour-status tour-card-cta ask-ai-link" data-chat-prefill-en="I need an airport or port transfer." data-chat-prefill-el="Χρειάζομαι μεταφορά από το αεροδρόμιο ή το λιμάνι." data-i18n="tourStatus">Ask AI for options</a>
           </article>
         </div>
         <p class="disclosure"><span data-i18n="partnerDisclosure">Some links may be partner recommendations.</span></p>
@@ -311,7 +312,7 @@
             <div class="concierge-card-content">
               <h3 data-i18n="conciergePhotographersTitle">Want photos without guessing?</h3>
               <p data-i18n="conciergePhotographersText">Couple shoots, honeymoon sessions, family photos and sunset frames.</p>
-              <a href="#ask-ai" class="tour-status concierge-card-cta ask-ai-link" data-chat-prefill-en="Can you suggest photographer options in Mykonos?" data-chat-prefill-el="Μπορείς να προτείνεις επιλογές για φωτογράφο στη Μύκονο;" data-i18n="askAiForOptions">Ask AI for options</a>
+              <a href="#ask-ai" class="tour-status concierge-card-cta ask-ai-link" data-chat-prefill-en="Can you arrange a photographer?" data-chat-prefill-el="Μπορείς να κανονίσεις φωτογράφο;" data-i18n="askAiForOptions">Ask AI for options</a>
             </div>
           </article>
           <article class="concierge-card">
@@ -319,7 +320,7 @@
             <div class="concierge-card-content">
               <h3 data-i18n="conciergeWeddingTitle">Planning a ceremony?</h3>
               <p data-i18n="conciergeWeddingText">Local planners for weddings, elopements and symbolic moments.</p>
-              <a href="#ask-ai" class="tour-status concierge-card-cta ask-ai-link" data-chat-prefill-en="Can you suggest wedding planner options in Mykonos?" data-chat-prefill-el="Μπορείς να προτείνεις επιλογές για wedding planner στη Μύκονο;" data-i18n="askAiForOptions">Ask AI for options</a>
+              <a href="#ask-ai" class="tour-status concierge-card-cta ask-ai-link" data-chat-prefill-en="I'm planning a proposal or wedding." data-chat-prefill-el="Οργανώνω πρόταση γάμου ή γάμο." data-i18n="askAiForOptions">Ask AI for options</a>
             </div>
           </article>
           <article class="concierge-card">
@@ -327,7 +328,7 @@
             <div class="concierge-card-content">
               <h3 data-i18n="conciergeFlowersTitle">Need flowers or a setup?</h3>
               <p data-i18n="conciergeFlowersText">Bouquets, ceremony styling and quiet proposal details.</p>
-              <a href="#ask-ai" class="tour-status concierge-card-cta ask-ai-link" data-chat-prefill-en="Can you suggest flowers and decoration options in Mykonos?" data-chat-prefill-el="Μπορείς να προτείνεις επιλογές για λουλούδια και διακόσμηση στη Μύκονο;" data-i18n="askAiForOptions">Ask AI for options</a>
+              <a href="#ask-ai" class="tour-status concierge-card-cta ask-ai-link" data-chat-prefill-en="I'm planning a proposal or wedding." data-chat-prefill-el="Οργανώνω πρόταση γάμου ή γάμο." data-i18n="askAiForOptions">Ask AI for options</a>
             </div>
           </article>
           <article class="concierge-card">
@@ -335,7 +336,7 @@
             <div class="concierge-card-content">
               <h3 data-i18n="conciergeTransfersTitle">Want a premium transfer?</h3>
               <p data-i18n="conciergeTransfersText">Helicopter options, private arrivals and licensed local providers.</p>
-              <a href="#ask-ai" class="tour-status concierge-card-cta ask-ai-link" data-chat-prefill-en="Can you suggest premium transfer options in Mykonos?" data-chat-prefill-el="Μπορείς να προτείνεις premium επιλογές μεταφοράς στη Μύκονο;" data-i18n="askAiForOptions">Ask AI for options</a>
+              <a href="#ask-ai" class="tour-status concierge-card-cta ask-ai-link" data-chat-prefill-en="I need an airport or port transfer." data-chat-prefill-el="Χρειάζομαι μεταφορά από το αεροδρόμιο ή το λιμάνι." data-i18n="askAiForOptions">Ask AI for options</a>
             </div>
           </article>
         </div>
@@ -420,6 +421,6 @@
       </div>
     </dialog>
 
-    <script src="script.js?v=night1" defer></script>
+    <script src="script.js?v=dion1" defer></script>
   </body>
 </html>

@@ -1,93 +1,68 @@
 # AskMykonos.ai
 
-Static site for **ASK MYKONOS AI**, a free live AI guide for Mykonos visitors.
+Static demo site for **AskMykonos.ai** — a scripted AI-travel-concierge
+**demonstration** for Mykonos, Greece. Part of the "ASK" network of AI travel
+guides. The domain is **available for acquisition**: info@asksantorini.ai.
 
-The site includes the live chat interface, useful starter questions, partner CTA, lightweight legal notices, and a contact mailto workflow.
+## Status
 
-## Project Structure
+This is a **demo, not a live AI product**:
 
-- `index.html` - page structure, SEO metadata, Open Graph tags, content sections
-- `styles.css` - responsive styling, CSS variables, layout, cards, forms, modals
-- `script.js` / `script.min.js` - starter question interactions, contact mailto workflow, privacy/terms modals, live chat
-- `robots.txt` / `sitemap.xml` - search engine crawl directives
-- `_headers` - Cloudflare Pages security headers
-- `404.html` - static not-found fallback
+- The chat is a **scripted demo** that runs entirely in the browser — no
+  backend, no API calls, no keys, no voice, no data collection.
+- Persona: **Dion** — camp/theatrical in English, clean professional concierge
+  in Greek. Scripted answers cover 16 known questions (8 starter chips +
+  8 card prefills), plus a fallback and an emergency guardrail (drops the act,
+  gives 112/166/100/108).
+- A "LIVE DEMO" badge and an informational (non-consent) cookie note keep the
+  demo honest with visitors.
 
-## Local Development
+## Stack
 
-Open `index.html` directly in a browser, or serve the folder with any static server:
+- Plain **HTML + one CSS file + one vanilla JS file**. No framework, no build
+  step, no package.json.
+- Bilingual EN/EL via a `translations` dictionary in `script.js`
+  (`?lang=en|el` → localStorage → default `en`).
+- Design: "Mykonos by Night" — dark Aegean palette, whitewash/gold,
+  bougainvillea-pink CTAs, moonlit-windmill hero SVG, coupe-glass logo.
+  No `backdrop-filter`/blur (old-hardware performance floor).
+
+## Files
+
+| Path | Purpose |
+| --- | --- |
+| `index.html` | Landing page: acquisition banners, hero + scripted chat, chips, tours/concierge cards, ASK-network panel |
+| `styles.css` | Single stylesheet, shared by all pages |
+| `script.js` | i18n, UI logic and the Dion scripted chat engine |
+| `faq.html` / `faq-el.html` | Bilingual FAQ (two static pages) |
+| `privacy-policy.html` | Honest demo privacy note (English) |
+| `knowledge/` | Markdown reference material (not loaded by the frontend) |
+| `_headers` | Cloudflare Pages security headers (CSP `connect-src 'self'`) |
+
+## Local development
+
+Open `index.html` directly, or:
 
 ```bash
 python3 -m http.server 8787
 ```
 
-Then visit:
+## Deploy
 
-```text
-http://localhost:8787
-```
+Cloudflare Pages, **git-connected to `main`**: every push to `main` goes
+**instantly live** on askmykonos.ai (no preview step). `styles.css` and
+`script.js` are cached for 24h, so their references carry a `?v=` query —
+**bump it whenever either file changes**.
 
-## Local Preparation Mode
+## The ASK network
 
-AskMykonos is currently in local preparation mode. It must not use the previous Santorini Worker. Before going live, create and configure a dedicated AskMykonos Cloudflare Worker.
+| Domain | Status |
+| --- | --- |
+| asksantorini.ai | LIVE |
+| asksingapore.ai | DEMO |
+| askmykonos.ai | DEMO (this repo) |
+| askparos.ai | COMING SOON |
 
-## Future Live AI Chat Architecture
-
-The intended live chat flow is:
-
-```text
-Frontend -> Cloudflare Worker -> Gemini API
-```
-
-Worker endpoint placeholder in `script.js`:
-
-```text
-PASTE_ASKMYKONOS_WORKER_URL_HERE
-```
-
-The frontend expects the Worker to return:
-
-```json
-{ "reply": "..." }
-```
-
-Current frontend requests include `message`, `destination`, `brand`, and `language`.
-The dedicated Worker prompt must be configured separately for Mykonos-specific answers; the Worker source is not part of this static frontend repository.
-
-Security:
-
-- No API keys are stored in the frontend.
-- The Gemini API key is stored as the Cloudflare Worker secret `GEMINI_API_KEY`.
-
-CSP:
-
-- `connect-src` is currently limited to `'self'` until a dedicated AskMykonos Worker is configured.
-
-## Partner Knowledge
-
-Partner data is currently stored in Markdown knowledge files.
-Knowledge files are local prompt/reference material and are not automatically used by the Worker unless injected into the Worker prompt/context.
-To make the bot actively use partner data, the Worker must later include selected partner context in its Gemini request.
-
-## Deploy to Cloudflare Pages
-
-1. Push these files to a Git repository.
-2. In Cloudflare Pages, create a new project from that repository.
-3. Use these build settings:
-
-   ```text
-   Framework preset: None
-   Build command: leave empty
-   Build output directory: /
-   ```
-
-4. Deploy.
-5. Connect the custom domain `askmykonos.ai` in Cloudflare when ready.
-
-## Next Updates
-
-- Add richer live-chat guidance based on visitor context.
-- Replace the contact mailto flow with a privacy-friendly contact backend if needed.
-- Add real privacy and terms pages before collecting data.
-- Add real partner links only after partnerships are confirmed.
-- Add analytics only if privacy-friendly and clearly disclosed.
+Zero cross-project dependency: this site calls no external services. The only
+sanctioned cross-site references are the acquisition mailto
+(info@asksantorini.ai) and the network panel links.

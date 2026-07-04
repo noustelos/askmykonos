@@ -70,14 +70,31 @@ Dark Aegean glamour; theatrical but never neon-grid/cyberpunk. Tokens in `:root`
 
 ## Current page structure (post-restructure)
 
-- **Dead emails removed**: `partners@askmykonos.ai` and `hello@askmykonos.ai` do NOT
-  work and must not reappear. The Contact panel (form) and Partners panel are gone.
-  `info@askmykonos.ai` remains only in privacy/terms copy.
+- **Dead emails removed**: NO `@askmykonos.ai` address works — none may appear
+  anywhere (grep-verified zero). All contact points to **info@asksantorini.ai**
+  (privacy page ×2, index privacy/terms modals, llms.txt ×2 + acquisition banners).
+  The Contact panel (form) and Partners panel are gone.
 - **Acquisition messaging**: top pill banner (above header) + pre-footer strip, both
   mailto **info@asksantorini.ai** (the working address), subject
   "AskMykonos.ai Domain Acquisition".
 - **ASK network panel** (replaces Contact panel): asksantorini.ai LIVE /
   asksingapore.ai DEMO / askmykonos.ai DEMO—this site / askparos.ai COMING SOON.
+
+## Privacy & cookies (demo-appropriate, shipped)
+
+- The full-GDPR policy was **replaced with an honest demo note** (5 sections:
+  no data collection / scripted in-browser chat / local-only preferences /
+  Cloudflare hosting / contact info@asksantorini.ai). The index privacy modal
+  carries the same message bilingually; the terms modal kept "verify info /
+  independent guide". Leftovers fixed at the same time: privacy meta
+  descriptions claiming "Cloudflare Worker + Google Gemini" processing, dead
+  nav anchors (#chatbot/#partners), stale theme-color.
+- **Cookie banner is informational only** — no tracking exists, so there is no
+  consent split: one "Got it"/«Κατάλαβα» button stores `dismissed` in
+  localStorage (`askMykonosCookiePreference`) and hides the banner. Don't
+  reintroduce Accept/Necessary buttons unless real analytics arrive.
+- Any legal-ish wording change (privacy, terms, cookie text) is **Nikos'
+  call** — propose, don't ship.
 
 ## Chat: SCRIPTED DION DEMO (shipped, no backend)
 
@@ -123,9 +140,13 @@ that branch when/if it comes.
 
 - **Done**: mic button + Web Speech code removed; Contact/Partners panels removed;
   orphaned i18n keys pruned; footer credit left-aligned single line; night logo/favicon.
-- **Pending**: `script.min.js` stale (delete when asked); privacy-policy §2 and the
-  "Ask naturally" step copy still mention voice/microphone — fix in the copy phase;
-  OG/social SVG still light-themed; old `ask-mykonos-logo.svg` unused.
+- **Done (privacy phase)**: GDPR boilerplate → demo note; zero dead emails
+  (grep-verified); informational cookie banner; README rewritten as factual
+  demo documentation. Current asset version: `?v=dion4`.
+- **Pending**: `script.min.js` stale (delete when asked); the "Ask naturally"
+  step copy still says "Type or speak" (voice removed) — fix in the copy phase;
+  OG/social SVG still light-themed; old `ask-mykonos-logo.svg` unused; llms.txt
+  intro still describes a "live AI guide" (demo honesty pass pending — Nikos).
 
 ## Previewing changes (headless Chrome)
 

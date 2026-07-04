@@ -573,6 +573,11 @@ h3 {
 
 .chat-card {
   position: relative;
+  /* Pinned below the windmill scene (not vertically centered): the card's
+     height varies with language/conversation, and centering let it swallow
+     the hero signature on shorter viewports. Growth now goes downward. */
+  align-self: start;
+  margin-top: 215px;
   padding: clamp(22px, 3vw, 30px);
   border: 1px solid var(--line);
   border-radius: 24px;
@@ -2184,6 +2189,11 @@ a.network-destination.is-live:hover {
   .hero::after,
   .hero-scene {
     display: none;
+  }
+
+  .chat-card {
+    align-self: auto;
+    margin-top: 0;
   }
 
   .questions-experience {

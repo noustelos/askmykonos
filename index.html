@@ -24,11 +24,11 @@
     <meta name="twitter:title" content="AskMykonos.ai – Smart, Stylish Mykonos Answers">
     <meta name="twitter:description" content="Your smart, stylish shortcut to Mykonos. Useful answers, minimal nonsense.">
     <meta name="twitter:image" content="https://askmykonos.ai/assets/social/ask-mykonos-og.svg">
-    <meta name="theme-color" content="#1E332A">
+    <meta name="theme-color" content="#0A1120">
     <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script type="application/ld+json">
       {
@@ -89,10 +89,17 @@
   </head>
   <body id="top">
     <a class="skip-link" href="#main-content">Skip to main content</a>
+    <div class="acquisition-banner">
+      <a href="mailto:info@asksantorini.ai?subject=AskMykonos.ai%20Domain%20Acquisition">
+        <span class="acquisition-dot" aria-hidden="true"></span>
+        <span>Premium domain available for acquisition</span>
+        <span class="acquisition-cta">Enquire <span aria-hidden="true">&rarr;</span></span>
+      </a>
+    </div>
     <header class="site-header">
       <a class="site-logo" href="#top" aria-label="Ask Mykonos AI home">
         <picture>
-          <img src="assets/brand/ask-mykonos-logo.svg" width="720" height="180" alt="Ask Mykonos AI">
+          <img src="assets/brand/ask-mykonos-logo-night.svg" width="720" height="180" alt="Ask Mykonos AI">
         </picture>
       </a>
       <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-navigation">
@@ -104,7 +111,6 @@
         <a href="#how-it-works" data-i18n="navHow">How it works</a>
         <a href="#tours" data-i18n="navTours">Tours</a>
         <a href="#concierge" data-i18n="navConcierge">Concierge</a>
-        <a href="#partners" data-i18n="navPartners">Partners</a>
         <a class="mobile-social-link" href="https://www.instagram.com/askmykonosai/" target="_blank" rel="noopener noreferrer" aria-label="Visit Ask Mykonos AI on Instagram" data-i18n-attr="aria-label:instagramAria">Instagram</a>
         <a class="nav-cta" href="#ask-ai" data-i18n="navEarlyAccess">Ask AI</a>
         <div class="language-toggle" role="group" aria-label="Language">
@@ -117,6 +123,38 @@
 
     <main id="main-content">
       <section class="hero section-shell">
+        <div class="hero-scene" aria-hidden="true">
+          <svg viewBox="0 0 420 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <radialGradient id="moon-glow" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#f6f3ea" stop-opacity="0.5"/>
+                <stop offset="45%" stop-color="#f6f3ea" stop-opacity="0.18"/>
+                <stop offset="100%" stop-color="#f6f3ea" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <circle cx="40" cy="52" r="1.3" fill="#f6f3ea" opacity="0.7"/>
+            <circle cx="150" cy="20" r="1" fill="#e3c584" opacity="0.8"/>
+            <circle cx="356" cy="36" r="1.2" fill="#f6f3ea" opacity="0.6"/>
+            <circle cx="398" cy="128" r="1" fill="#f6f3ea" opacity="0.5"/>
+            <circle cx="20" cy="160" r="1" fill="#e3c584" opacity="0.6"/>
+            <circle cx="96" cy="86" r="60" fill="url(#moon-glow)"/>
+            <circle cx="96" cy="86" r="30" fill="#f2eee2" opacity="0.95"/>
+            <circle cx="87" cy="77" r="5" fill="#dcd7c6" opacity="0.55"/>
+            <circle cx="106" cy="95" r="3.5" fill="#dcd7c6" opacity="0.45"/>
+            <circle cx="98" cy="69" r="2.5" fill="#dcd7c6" opacity="0.45"/>
+            <g stroke="#c9a55c" stroke-width="2" stroke-linecap="round" opacity="0.9">
+              <path d="M268 150 L340 150 M268 150 L318.9 200.9 M268 150 L268 222 M268 150 L217.1 200.9 M268 150 L196 150 M268 150 L217.1 99.1 M268 150 L268 78 M268 150 L318.9 99.1"/>
+              <circle cx="268" cy="150" r="72" stroke-dasharray="3 8" opacity="0.45"/>
+              <circle cx="268" cy="150" r="4.5" fill="#0a1120"/>
+              <path d="M226 208 L268 148 L310 208"/>
+              <path d="M226 208 H310"/>
+              <path d="M230 208 L221 332 M306 208 L315 332"/>
+              <path d="M258 332 v-24 a10 10 0 0 1 20 0 v24"/>
+              <circle cx="268" cy="244" r="5"/>
+              <path d="M178 332 H366" opacity="0.5"/>
+            </g>
+          </svg>
+        </div>
         <div class="hero-copy">
           <p class="eyebrow">AskMykonos.ai</p>
           <h1><a class="hero-title-link" href="#ask-ai" data-i18n="heroTitle">Your smart, stylish shortcut to Mykonos.</a></h1>
@@ -143,7 +181,6 @@
           </div>
           <div class="input-area">
             <input type="text" id="user-input" data-i18n-attr="placeholder:chatPlaceholder" placeholder="Ask about beaches, transfers, sunsets..." autocomplete="off">
-            <button id="mic-btn" class="mic-btn" type="button" title="Speak to AI" aria-label="Speak to AI" data-i18n-attr="title:micAria, aria-label:micAria">🎤</button>
             <button id="send-btn" class="send-btn" type="button" data-i18n="sendButton">Send</button>
           </div>
           <p class="chatbot-tech-note chat-disclaimer-note" data-i18n="geminiNote">AI answers may need verification for schedules, prices and availability.</p>
@@ -256,7 +293,7 @@
             <a href="#ask-ai" class="tour-status tour-card-cta ask-ai-link" data-chat-prefill-en="What is the easiest transfer option in Mykonos?" data-chat-prefill-el="Ποια είναι η πιο εύκολη επιλογή μεταφοράς στη Μύκονο;" data-i18n="tourStatus">Ask AI for options</a>
           </article>
         </div>
-        <p class="disclosure"><span data-i18n="partnerDisclosure">Some links may be partner recommendations.</span> <span data-i18n="toBeFeatured">To be featured, contact</span> <a href="mailto:partners@askmykonos.ai">partners@askmykonos.ai</a>.</p>
+        <p class="disclosure"><span data-i18n="partnerDisclosure">Some links may be partner recommendations.</span></p>
       </section>
 
       <section class="concierge-section section-shell" id="concierge">
@@ -304,45 +341,22 @@
         </div>
         <div class="concierge-footer">
           <p class="disclosure" data-i18n="conciergeDisclosure">Featured services may include partner recommendations.</p>
-          <a class="button button-secondary" href="mailto:partners@askmykonos.ai?subject=AskMykonos.ai%20Concierge%20Services" data-i18n="conciergeCta">Interested in being featured?</a>
         </div>
       </section>
 
-      <section class="partners-section section-shell" id="partners">
-        <div class="partners-panel">
-          <div>
-            <p class="eyebrow" data-i18n="partnersEyebrow">Partners</p>
-            <h2 data-i18n="partnersTitle">Want visitors to find you when they ask?</h2>
-            <p data-i18n="partnersText">AskMykonos.ai connects visitor intent with relevant hotels, tours and local businesses when the answer naturally calls for them.</p>
+      <section class="network-section section-shell" id="network">
+        <div class="network-panel">
+          <div class="network-copy">
+            <p class="eyebrow" data-i18n="networkEyebrow">The ASK Network</p>
+            <h2 data-i18n="networkTitle">Not a lone island. A constellation.</h2>
+            <p data-i18n="networkText">AskMykonos.ai is part of the ASK AI travel network — sister guides for the places people actually ask about.</p>
           </div>
-          <div class="partner-actions">
-            <a class="button button-primary" href="mailto:partners@askmykonos.ai?subject=AskMykonos.ai%20Partnership" data-i18n="becomePartner">Become a partner</a>
-            <a class="partner-social-link" href="https://www.instagram.com/askmykonosai/" target="_blank" rel="noopener noreferrer" aria-label="Visit Ask Mykonos AI on Instagram" data-i18n="instagramUpdates" data-i18n-attr="aria-label:instagramAria">Follow updates on Instagram</a>
+          <div class="network-destinations">
+            <a class="network-destination is-live" href="https://asksantorini.ai" target="_blank" rel="noopener noreferrer">asksantorini.ai <span class="network-badge">Live</span></a>
+            <a class="network-destination is-demo" href="https://asksingapore.ai" target="_blank" rel="noopener noreferrer">asksingapore.ai <span class="network-badge">Demo</span></a>
+            <span class="network-destination is-demo is-here">askmykonos.ai <span class="network-badge" data-i18n="networkThisSite">Demo — this site</span></span>
+            <span class="network-destination is-soon">askparos.ai <span class="network-badge">Coming soon</span></span>
           </div>
-        </div>
-      </section>
-
-      <section class="chatbot-section section-shell" id="chatbot">
-        <div class="chatbot-panel">
-          <div class="chatbot-copy">
-            <p class="eyebrow" data-i18n="earlyAccessEyebrow">Live now</p>
-            <h2 data-i18n="earlyAccessTitle">Ready to ask your Mykonos question?</h2>
-            <p data-i18n="earlyAccessIntro">Use the live AI guide for beaches, sunset timing, grilled octopus by the sea, private boat rides or calm day plans.</p>
-            <p data-i18n="earlyAccessText">No app. No sign-up. Just a direct answer.</p>
-          </div>
-          <form class="notify-form" id="notify-form" novalidate>
-            <label for="email" data-i18n="emailLabel">Email address</label>
-            <div class="honeypot" aria-hidden="true">
-              <label for="company" data-i18n="companyLabel">Company</label>
-              <input id="company" name="company" type="text" tabindex="-1" autocomplete="off">
-            </div>
-            <div class="form-row">
-              <input id="email" name="email" type="email" autocomplete="email" required inputmode="email" aria-describedby="form-note form-status">
-              <button class="button button-primary" type="submit" data-i18n="contactCta">Contact us</button>
-            </div>
-            <p class="form-note" id="form-note"><span data-i18n="contactForNow">For partnerships or questions, contact us at</span> <a href="mailto:hello@askmykonos.ai">hello@askmykonos.ai</a></p>
-            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
-          </form>
         </div>
       </section>
     </main>
@@ -352,22 +366,25 @@
       <p>Use this Mykonos travel guide AI for things to do in Mykonos, Mykonos beaches, Mykonos sunset spots, Mykonos tours, boat rentals Mykonos, food, transport and local experiences. AskMykonos.ai works as an AI travel planner for Greece focused on real-time Mykonos questions.</p>
     </section>
 
+    <div class="acquisition-strip">
+      <div class="acquisition-strip-inner section-shell">
+        <p><span class="acquisition-dot" aria-hidden="true"></span> Premium domain available for acquisition.</p>
+        <a class="button button-primary" href="mailto:info@asksantorini.ai?subject=AskMykonos.ai%20Domain%20Acquisition">Enquire <span aria-hidden="true">&rarr;</span></a>
+      </div>
+    </div>
+
     <footer class="site-footer">
       <div class="footer-inner section-shell">
         <div class="footer-brand-group">
           <a class="footer-brand" href="#top">askmykonos.ai</a>
           <p data-i18n="footerDisclaimer">Independent visitor guide. Not affiliated with Google or any official tourism authority.</p>
+          <a class="footer-credit" href="https://noustelos.gr" target="_blank" rel="noopener">A NOUSTELOS_STUDIO /&gt; project</a>
         </div>
         <div class="footer-links">
           <a href="faq.html" hreflang="en" lang="en">FAQ</a>
-          <a href="faq-el.html" hreflang="el" lang="el">Συχνές Ερωτήσεις</a>
           <button type="button" data-modal="privacy-modal" data-i18n="privacyLink">Privacy &amp; Cookies</button>
           <button type="button" data-modal="terms-modal" data-i18n="termsLink">Terms</button>
-          <a href="mailto:hello@askmykonos.ai" data-i18n="navContact">Contact</a>
           <a href="https://www.instagram.com/askmykonosai/" target="_blank" rel="noopener noreferrer" aria-label="Visit Ask Mykonos AI on Instagram" data-i18n-attr="aria-label:instagramAria">Instagram</a>
-        </div>
-        <div class="footer-credit-group">
-          <a class="footer-credit" href="https://noustelos.gr" target="_blank" rel="noopener">A NOUSTELOS_STUDIO /&gt; project</a>
         </div>
         <p class="footer-copyright">&copy; <span id="current-year">2026</span> AskMykonos.ai. <span data-i18n="allRights">All rights reserved.</span></p>
       </div>

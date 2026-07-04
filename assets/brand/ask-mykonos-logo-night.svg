@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 180" role="img" aria-labelledby="title desc">
+  <title id="title">Ask Mykonos AI</title>
+  <desc id="desc">AskMykonos.ai wordmark with a moonlit coupe glass mark.</desc>
+  <rect width="720" height="180" fill="none"/>
+  <g transform="translate(36 30)">
+    <path d="M24 10 L27 17.5 L34 20.5 L27 23.5 L24 31 L21 23.5 L14 20.5 L21 17.5 Z" fill="#e3c584"/>
+    <circle cx="87" cy="26" r="6.5" fill="#ef5a8b"/>
+    <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 33 C21 57 38 63 56 63 C74 63 91 57 94 33 Z" stroke="#f6f3ea" stroke-width="7"/>
+      <path d="M28 44 C41 50 71 50 84 44" stroke="#e3c584" stroke-width="5"/>
+      <path d="M56 63 V92" stroke="#f6f3ea" stroke-width="7"/>
+      <path d="M36 98 C43 93 69 93 76 98" stroke="#f6f3ea" stroke-width="7"/>
+    </g>
+  </g>
+  <text x="146" y="83" fill="#f6f3ea" font-family="Inter, Arial, sans-serif" font-size="48" font-weight="800">AskMykonos</text>
+  <text x="147" y="124" fill="#e3c584" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700" letter-spacing="6">AI</text>
+  <text x="204" y="124" fill="#98a0b3" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="600">travel concierge</text>
+</svg>

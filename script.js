@@ -8,8 +8,6 @@ const translations = {
     navHow: "How it works",
     navTours: "Tours",
     navConcierge: "Concierge",
-    navPartners: "Partners",
-    navContact: "Contact",
     navEarlyAccess: "Ask AI",
     startAsking: "Start asking",
     seeQuestions: "Try a question",
@@ -28,8 +26,6 @@ const translations = {
     chatGreeting: "Hi. I can help with Mykonos plans, logistics and the occasional elegant rescue.",
     chatPlaceholder: "Ask about beaches, transfers, sunsets...",
     sendButton: "Send",
-    micAria: "Speak to AI",
-    listeningAria: "Listening",
     thinkingMessage: "Thinking...",
     noReplyMessage: "Sorry, I could not generate a reply.",
     disconnectedMessage: "Sorry, I got disconnected. Please try again.",
@@ -80,7 +76,10 @@ const translations = {
     tourTransfersText: "Ask about airport, port and day-plan transfers before the luggage gets dramatic.",
     tourStatus: "Ask for ideas",
     partnerDisclosure: "Some links may be partner recommendations.",
-    toBeFeatured: "To be featured, contact",
+    networkEyebrow: "The ASK Network",
+    networkTitle: "Not a lone island. A constellation.",
+    networkText: "AskMykonos.ai is part of the ASK AI travel network — sister guides for the places people actually ask about.",
+    networkThisSite: "Demo — this site",
     conciergeEyebrow: "Concierge",
     conciergeTitle: "Boutique guidance, minus the group chat meltdown",
     conciergeIntro: "Ask about photos, private transfers, beauty, proposals and special evenings with the right Mykonos context.",
@@ -95,23 +94,9 @@ const translations = {
     conciergeTransfersText: "Private arrivals and licensed local providers, depending on what you need.",
     askAiForOptions: "Ask AI for options",
     conciergeAskOptions: "Ask AI for options",
-    conciergeCta: "Interested in being featured?",
     conciergeDisclosure: "Featured services may include partner recommendations.",
-    partnersEyebrow: "Partners",
-    partnersTitle: "Want visitors to find you when they ask?",
-    partnersText: "AskMykonos.ai connects visitor intent with relevant hotels, tours and local businesses when the answer naturally calls for them.",
-    becomePartner: "Become a partner",
-    instagramUpdates: "Follow updates on Instagram",
     instagramAria: "Visit Ask Mykonos AI on Instagram",
-    earlyAccessEyebrow: "Live now",
-    earlyAccessTitle: "Ready to ask Mykonos properly?",
-    earlyAccessIntro: "Use the guide for beaches, sunset timing, food, transfers, boat ideas and calm day plans.",
-    earlyAccessText: "Bring sunscreen. Leave the chaos.",
-    emailLabel: "Email address",
-    companyLabel: "Company",
     notifyMe: "Ask now",
-    contactCta: "Contact us",
-    contactForNow: "For partnerships or questions, contact us at",
     footerDisclaimer: "Independent visitor guide. Not affiliated with Google or any official tourism authority.",
     allRights: "All rights reserved.",
     privacyLink: "Privacy & Cookies",
@@ -137,10 +122,6 @@ const translations = {
     menuClose: "Close menu",
     languageToggleLabel: "Language",
     questionAction: "✦",
-    invalidEmail: "Enter a valid email address.",
-    openingEmail: "Opening your email app.",
-    mailSubject: "AskMykonos.ai Contact",
-    mailBody: (email) => `Hello AskMykonos.ai,\n\nI would like to get in touch.\n\nEmail: ${email}`,
     questions: {
       sunset: "Sunset without the stampede?",
       catamaran: "Can I do Delos and a swim?",
@@ -171,8 +152,6 @@ const translations = {
     navHow: "Πώς λειτουργεί",
     navTours: "Εκδρομές",
     navConcierge: "Concierge",
-    navPartners: "Συνεργάτες",
-    navContact: "Επικοινωνία",
     navEarlyAccess: "Ask AI",
     startAsking: "Ξεκίνα την ερώτηση",
     seeQuestions: "Δες παραδείγματα",
@@ -191,8 +170,6 @@ const translations = {
     chatGreeting: "Γεια! Μπορώ να βοηθήσω με παραλίες, μετακινήσεις, ηλιοβασίλεμα, φαγητό και πρακτικό πρόγραμμα.",
     chatPlaceholder: "Ρώτησε για παραλίες, μετακινήσεις, ηλιοβασίλεμα...",
     sendButton: "Αποστολή",
-    micAria: "Μίλησε στον AI οδηγό",
-    listeningAria: "Ακούω",
     thinkingMessage: "Σκέφτομαι...",
     noReplyMessage: "Συγγνώμη, δεν μπόρεσα να δημιουργήσω απάντηση.",
     disconnectedMessage: "Συγγνώμη, αποσυνδέθηκα. Δοκίμασε ξανά.",
@@ -243,7 +220,10 @@ const translations = {
     tourTransfersText: "Ρώτησε για μεταφορές από αεροδρόμιο, λιμάνι και ημερήσια πλάνα.",
     tourStatus: "Ρώτησε για ιδέες",
     partnerDisclosure: "Ορισμένοι σύνδεσμοι μπορεί να είναι συνεργατικές προτάσεις.",
-    toBeFeatured: "Για προβολή, επικοινωνήστε στο",
+    networkEyebrow: "Το δίκτυο ASK",
+    networkTitle: "Όχι μοναχικό νησί. Αστερισμός.",
+    networkText: "Το AskMykonos.ai είναι μέρος του δικτύου ταξιδιωτικών AI οδηγών ASK — αδελφοί οδηγοί για τα μέρη που ρωτάει πραγματικά ο κόσμος.",
+    networkThisSite: "Demo — αυτό το site",
     conciergeEyebrow: "Concierge",
     conciergeTitle: "Καθοδήγηση για στιγμές που χρειάζονται σωστή οργάνωση",
     conciergeIntro: "Ρώτησε για φωτογραφίες, ιδιωτικές μεταφορές, beauty, προτάσεις γάμου και ξεχωριστές βραδιές με σωστό τοπικό πλαίσιο.",
@@ -258,23 +238,9 @@ const translations = {
     conciergeTransfersText: "Ελικόπτερο, ιδιωτικές αφίξεις και αδειοδοτημένοι τοπικοί πάροχοι.",
     askAiForOptions: "Ρώτησε το AI για επιλογές",
     conciergeAskOptions: "Ρώτησε το AI για επιλογές",
-    conciergeCta: "Θέλεις να εμφανιστείς εδώ;",
     conciergeDisclosure: "Οι προτεινόμενες υπηρεσίες μπορεί να περιλαμβάνουν συνεργατικές προτάσεις.",
-    partnersEyebrow: "Συνεργάτες",
-    partnersTitle: "Θέλεις να σε βρίσκουν οι επισκέπτες όταν ρωτούν;",
-    partnersText: "Το AskMykonos.ai συνδέει την πρόθεση του επισκέπτη με σχετικά ξενοδοχεία, εκδρομές και τοπικές επιχειρήσεις όταν η απάντηση το χρειάζεται.",
-    becomePartner: "Γίνετε συνεργάτης",
-    instagramUpdates: "Ακολούθησε τα νέα στο Instagram",
     instagramAria: "Άνοιγμα του Ask Mykonos AI στο Instagram",
-    earlyAccessEyebrow: "Live τώρα",
-    earlyAccessTitle: "Έτοιμος να ρωτήσεις για τη Μύκονο;",
-    earlyAccessIntro: "Χρησιμοποίησε τον οδηγό για παραλίες, ηλιοβασίλεμα, φαγητό, μετακινήσεις, εκδρομές και ήρεμα ημερήσια πλάνα.",
-    earlyAccessText: "Χωρίς εφαρμογή. Χωρίς εγγραφή. Μόνο καθαρή απάντηση.",
-    emailLabel: "Email",
-    companyLabel: "Εταιρεία",
     notifyMe: "Ρώτησε τώρα",
-    contactCta: "Επικοινωνία",
-    contactForNow: "Για συνεργασίες ή ερωτήσεις, επικοινώνησε μαζί μας στο",
     footerDisclaimer: "Ανεξάρτητος οδηγός επισκεπτών. Δεν συνδέεται με την Google ή με επίσημο τουριστικό φορέα.",
     allRights: "Με επιφύλαξη παντός δικαιώματος.",
     privacyLink: "Απόρρητο & Cookies",
@@ -300,10 +266,6 @@ const translations = {
     menuClose: "Κλείσιμο μενού",
     languageToggleLabel: "Γλώσσα",
     questionAction: "✦",
-    invalidEmail: "Πληκτρολόγησε ένα έγκυρο email.",
-    openingEmail: "Ανοίγει η εφαρμογή email.",
-    mailSubject: "AskMykonos.ai Επικοινωνία",
-    mailBody: (email) => `Γεια σας AskMykonos.ai,\n\nΘα ήθελα να επικοινωνήσω μαζί σας.\n\nEmail: ${email}`,
     questions: {
       sunset: "Πού να δω ηλιοβασίλεμα;",
       catamaran: "Να πάω Δήλο ή Ρήνεια;",
@@ -331,14 +293,12 @@ const preview = document.querySelector("#answer-preview");
 const previewQuestion = document.querySelector("#preview-question");
 const previewAnswer = document.querySelector("#preview-answer");
 const questionCards = document.querySelectorAll(".question-card");
-const notifyForm = document.querySelector("#notify-form");
 const modalButtons = document.querySelectorAll("[data-modal]");
 const closeButtons = document.querySelectorAll("[data-close]");
 const siteHeader = document.querySelector(".site-header");
 const menuToggle = document.querySelector(".menu-toggle");
 const siteNav = document.querySelector(".site-nav");
 const currentYear = document.querySelector("#current-year");
-const formStatus = document.querySelector("#form-status");
 const cookieBanner = document.querySelector("#cookie-banner");
 const acceptCookies = document.querySelector("#accept-cookies");
 const essentialCookies = document.querySelector("#essential-cookies");
@@ -349,7 +309,6 @@ const localPreparationMessage = "AskMykonos is not connected to its dedicated AI
 const chatBox = document.getElementById("chat-box");
 const userInput = document.getElementById("user-input");
 const sendBtn = document.getElementById("send-btn");
-const micBtn = document.getElementById("mic-btn");
 const cookieStorageKey = "askMykonosCookiePreference";
 const languageStorageKey = "preferredLanguage";
 let currentLanguage = "en";
@@ -500,11 +459,6 @@ const updateChatControls = (language) => {
 
   if (userInput) {
     userInput.setAttribute("placeholder", copy.chatPlaceholder);
-  }
-
-  if (micBtn) {
-    micBtn.setAttribute("title", copy.micAria);
-    micBtn.setAttribute("aria-label", copy.micAria);
   }
 };
 
@@ -701,53 +655,6 @@ questionCards.forEach((card, index) => {
   }
 });
 
-if (notifyForm) {
-  const emailInput = notifyForm.querySelector("#email");
-
-  emailInput?.addEventListener("input", () => {
-    emailInput.setAttribute("aria-invalid", "false");
-
-    if (formStatus) {
-      formStatus.textContent = "";
-    }
-  });
-
-  notifyForm.addEventListener("submit", (event) => {
-    event.preventDefault();
-
-    const copy = translations[currentLanguage];
-    const formData = new FormData(notifyForm);
-    const email = String(formData.get("email") || "").trim();
-    const honeypot = String(formData.get("company") || "").trim();
-
-    if (honeypot) {
-      return;
-    }
-
-    if (!emailInput || !emailInput.checkValidity()) {
-      emailInput?.setAttribute("aria-invalid", "true");
-
-      if (formStatus) {
-        formStatus.textContent = copy.invalidEmail;
-      }
-
-      emailInput?.focus();
-      return;
-    }
-
-    emailInput.setAttribute("aria-invalid", "false");
-
-    if (formStatus) {
-      formStatus.textContent = copy.openingEmail;
-    }
-
-    const subject = encodeURIComponent(copy.mailSubject);
-    const body = encodeURIComponent(copy.mailBody(email));
-
-    window.location.href = `mailto:hello@askmykonos.ai?subject=${subject}&body=${body}`;
-  });
-}
-
 modalButtons.forEach((button) => {
   button.addEventListener("click", (event) => {
     event.preventDefault();
@@ -899,81 +806,6 @@ if (sendBtn && userInput) {
       sendMessage(userInput.value);
     }
   });
-}
-
-const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-
-if (micBtn && userInput && SpeechRecognition) {
-  const recognition = new SpeechRecognition();
-
-  recognition.continuous = false;
-  recognition.interimResults = false;
-  recognition.maxAlternatives = 1;
-
-  function getCurrentSpeechLanguage() {
-    const htmlLang = document.documentElement.lang || "en";
-    const savedLang =
-      getStoredValue(languageStorageKey) ||
-      getStoredValue("askMykonosLang") ||
-      getStoredValue("language") ||
-      "";
-    const currentLang = (htmlLang || savedLang || "en").toLowerCase();
-
-    if (currentLang.startsWith("el")) {
-      return "el-GR";
-    }
-
-    return "en-US";
-  }
-
-  function resetMicButton() {
-    const copy = translations[currentLanguage];
-
-    micBtn.classList.remove("recording");
-    micBtn.setAttribute("aria-label", copy.micAria);
-    micBtn.textContent = "🎤";
-  }
-
-  micBtn.addEventListener("click", () => {
-    try {
-      recognition.lang = getCurrentSpeechLanguage();
-      recognition.start();
-
-      micBtn.classList.add("recording");
-      micBtn.setAttribute("aria-label", translations[currentLanguage].listeningAria);
-      micBtn.textContent = "■";
-    } catch (error) {
-      console.warn("Speech recognition could not start:", error);
-      resetMicButton();
-    }
-  });
-
-  recognition.onresult = (event) => {
-    const transcript = event.results?.[0]?.[0]?.transcript || "";
-
-    userInput.value = transcript;
-    resetMicButton();
-
-    if (transcript.trim()) {
-      sendMessage(transcript);
-    }
-  };
-
-  recognition.onspeechend = () => {
-    recognition.stop();
-  };
-
-  recognition.onend = () => {
-    resetMicButton();
-  };
-
-  recognition.onerror = (event) => {
-    console.warn("Speech recognition error:", event.error);
-    resetMicButton();
-  };
-
-} else if (micBtn) {
-  micBtn.style.display = "none";
 }
 
 setLanguage(getInitialLanguage());

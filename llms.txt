@@ -42,4 +42,4 @@ details should be verified with the relevant provider.
 - [Privacy note](https://askmykonos.ai/privacy-policy.html): Demonstration site — no data
   collection; the chat is a scripted demo that runs entirely in the browser.
 - [Contact](mailto:info@asksantorini.ai): Questions about this demo or the domain.
-- [Instagram](https://www.instagram.com/askmykonosai/): Updates.
+- [Instagram](https://www.instagram.com/asksantoriniai/): Updates.

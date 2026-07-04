@@ -75,20 +75,32 @@ Dark Aegean glamour; theatrical but never neon-grid/cyberpunk. Tokens in `:root`
 - **ASK network panel** (replaces Contact panel): asksantorini.ai LIVE /
   asksingapore.ai DEMO / askmykonos.ai DEMO—this site / askparos.ai COMING SOON.
 
-## Live chat status + Dion (ΦΑΣΗ 2, pending)
+## Chat: SCRIPTED DION DEMO (shipped, no backend)
 
-The chat card is a **mockup/dead-end**: `workerUrl` in script.js is the placeholder
-`PASTE_ASKMYKONOS_WORKER_URL_HERE`, so every message gets a static "not connected"
-reply. There is no backend, no API, no voice — and none is planned for the demo.
-A scripted-answer engine (like AskSingapore) is the next phase, fed by [knowledge/](knowledge/).
+The chat is a **client-side scripted demo** — no backend, no API, no keys, no voice.
+`workerUrl` stays the placeholder; the scripted engine lives in the
+`!isWorkerConfigured` branch of `sendMessage`, so a real backend simply replaces
+that branch when/if it comes.
 
-**Persona = DION** (not yet implemented anywhere — zero Dion content in the repo):
-- Flamboyant, theatrical, camp, witty, name-dropper, "snob-with-love", Dionysos energy.
-- ⚠️ **Language split: camp/theatrical in ENGLISH only; GREEK answers stay clean,
-  professional concierge tone.**
-- **TRUTH OVER DRAMA**: facts from knowledge/ must stay accurate; flair never invents.
-- **Emergency guardrail**: on safety/medical/emergency questions, drop the act
-  completely — direct, sober answers (see knowledge/safety.md).
+- **`DION_SCRIPT {en, el}`** in script.js (verbatim from Nikos' dion-script.md):
+  greeting + 8 chip answers + 8 card-prefill answers + fallback + emergency.
+  **EN = camp/theatrical Dion; EL = clean professional concierge.**
+- **Matching**: exact match (normalized: lowercase, accent-insensitive, trailing
+  punctuation stripped) against 32 strings (16 known questions × 2 languages,
+  chip texts in `translations.*.questions` + `DION_QUESTIONS`, which must mirror
+  the `data-chat-prefill-*` attributes) → DION_SCRIPT key.
+- **Emergency guardrail**: free text passes an EN+EL emergency-keyword scan FIRST
+  → drop-the-act reply (112/166/100/108). Known questions (our own safe texts —
+  one contains the word "help") bypass the scan via the exact-match shortcut.
+- **Delivery**: chips/cards prefill the input and auto-send (300ms) → typing dots
+  (800ms) → word-by-word reveal (45ms/word, opacity-only spans, `textContent` —
+  never innerHTML with user input). **Reduced motion: reveal stays ON (it's the
+  demo concept), dots and smooth scrolls OFF.**
+- **LIVE DEMO badge** in the chat header (EL: «ΖΩΝΤΑΝΟ DEMO») — honest signal.
+- **Grounded**: places only — no venue names, no prices, no discount codes
+  (TRUTH OVER DRAMA, per knowledge/ do-not-invent lists).
+- P4 (beach club) and P8 (car rental) have no card — reachable only by typing
+  their exact question.
 
 ## i18n (script.js)
 

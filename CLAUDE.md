@@ -57,6 +57,10 @@ Dark Aegean glamour; theatrical but never neon-grid/cyberpunk. Tokens in `:root`
 - Type: Playfair Display (serif, headings + italic accents, Greek supported) + Inter.
 - Signature: **moonlit windmill** — inline line-art SVG in the hero (`.hero-scene`),
   peeking behind the chat card; stars via static CSS gradients. Hidden ≤980px.
+  The chat card is `align-self: start` + fixed `margin-top` so its top is
+  deterministic — a vertically centered card used to swallow the windmill when
+  it grew (longer EN greeting, short viewports). Don't re-center it; growth
+  goes downward. Mobile resets the margin.
 - Logo: **coupe glass** (Dionysos/nightlife) in whitewash/gold/pink; favicon matches.
 - **Performance floor: 2017 MacBook Air.** No `backdrop-filter`, no `filter: blur`,
   static gradients only. Keep it that way.
@@ -97,6 +101,9 @@ that branch when/if it comes.
   never innerHTML with user input). **Reduced motion: reveal stays ON (it's the
   demo concept), dots and smooth scrolls OFF.**
 - **LIVE DEMO badge** in the chat header (EL: «ΖΩΝΤΑΝΟ DEMO») — honest signal.
+- **Honest placeholder**: the input says "Tap a suggested question below" /
+  «Επιλέξτε μια ερώτηση παρακάτω» — it steers to the chips/cards and must not
+  promise free-form AI (free typing still works → fallback/emergency).
 - **Grounded**: places only — no venue names, no prices, no discount codes
   (TRUTH OVER DRAMA, per knowledge/ do-not-invent lists).
 - P4 (beach club) and P8 (car rental) have no card — reachable only by typing

@@ -32,16 +32,14 @@ details should be verified with the relevant provider.
   taxis are limited (book transfers ahead in peak season); ATV or car helps for remote
   beaches like Fokos. A car is optional for simple, bus-friendly itineraries.
 
-## Concierge & partners
+## Concierge
 
 - [Concierge services](https://askmykonos.ai/#concierge): Ask about photographers, wedding
   and ceremony planners, flowers and setups, and premium transfers with local context.
-- [Become a partner](mailto:partners@askmykonos.ai): For hotels, tours and local businesses
-  that want to be surfaced when a visitor's question naturally calls for them.
 
 ## Legal & contact
 
-- [Privacy Policy](https://askmykonos.ai/privacy-policy.html): How data is processed
-  (AI chat via Cloudflare Worker + Google Gemini, contact email, cookies, user rights).
-- [Contact](mailto:hello@askmykonos.ai): General questions and partnerships.
+- [Privacy note](https://askmykonos.ai/privacy-policy.html): Demonstration site — no data
+  collection; the chat is a scripted demo that runs entirely in the browser.
+- [Contact](mailto:info@asksantorini.ai): Questions about this demo or the domain.
 - [Instagram](https://www.instagram.com/askmykonosai/): Updates.

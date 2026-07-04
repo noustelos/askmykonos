@@ -178,17 +178,15 @@ const translations = {
     privacyLink: "Privacy & Cookies",
     termsLink: "Terms",
     cookieNoticeAria: "Cookie notice",
-    cookieText: "We use cookies to improve your experience and understand site traffic.",
-    acceptCookies: "Accept all",
-    essentialCookies: "Necessary only",
+    cookieText: "This demo sets no tracking cookies. Only your language and banner preference are stored locally in your browser.",
+    cookieDismiss: "Got it",
     closeButton: "Close",
     privacyCloseAria: "Close privacy notice",
     privacyTitle: "Privacy Policy",
-    privacyP1: "Your privacy matters.",
-    privacyP2: "We may collect your email address when you contact us.",
-    privacyP3: "We use this information only to respond to your request or send relevant AskMykonos.ai updates.",
-    privacyP4: "The site may use necessary cookies for basic functionality and, with consent, analytics cookies to improve the user experience.",
-    privacyP5: "You can request access, correction or deletion of your data by contacting",
+    privacyP1: "AskMykonos.ai is currently a demonstration website. It does not collect or store personal data — there are no accounts, no contact forms, and no analytics.",
+    privacyP2: "The chat assistant is a scripted demo that runs entirely in your browser. Messages you type are not transmitted or stored anywhere.",
+    privacyP3: "Your language and cookie-banner preferences are saved only in your browser's local storage.",
+    privacyP5: "For questions about this demo or the domain, contact",
     termsCloseAria: "Close terms notice",
     termsTitle: "Terms",
     termsP1: "Some links may be partner recommendations. Information should be verified before booking or traveling.",
@@ -323,17 +321,15 @@ const translations = {
     privacyLink: "Απόρρητο & Cookies",
     termsLink: "Όροι",
     cookieNoticeAria: "Ενημέρωση για cookies",
-    cookieText: "Χρησιμοποιούμε cookies για να βελτιώσουμε την εμπειρία σου και να κατανοήσουμε την επισκεψιμότητα.",
-    acceptCookies: "Αποδοχή όλων",
-    essentialCookies: "Μόνο απαραίτητα",
+    cookieText: "Αυτό το demo δεν χρησιμοποιεί cookies παρακολούθησης. Μόνο η γλώσσα και η προτίμησή σου αποθηκεύονται τοπικά στον browser σου.",
+    cookieDismiss: "Κατάλαβα",
     closeButton: "Κλείσιμο",
     privacyCloseAria: "Κλείσιμο πολιτικής απορρήτου",
     privacyTitle: "Πολιτική Απορρήτου",
-    privacyP1: "Η ιδιωτικότητά σου είναι σημαντική.",
-    privacyP2: "Μπορεί να συλλέξουμε το email σου όταν επικοινωνείς μαζί μας.",
-    privacyP3: "Το χρησιμοποιούμε μόνο για να απαντήσουμε στο αίτημά σου ή να στείλουμε σχετικές ενημερώσεις για το AskMykonos.ai.",
-    privacyP4: "Ο ιστότοπος μπορεί να χρησιμοποιεί απαραίτητα cookies για τη βασική λειτουργία του και, εφόσον δοθεί συγκατάθεση, cookies ανάλυσης για τη βελτίωση της εμπειρίας χρήστη.",
-    privacyP5: "Μπορείς να ζητήσεις πρόσβαση, διόρθωση ή διαγραφή των δεδομένων σου επικοινωνώντας στο",
+    privacyP1: "Το AskMykonos.ai είναι αυτή τη στιγμή ιστότοπος επίδειξης (demo). Δεν συλλέγει ούτε αποθηκεύει προσωπικά δεδομένα — δεν υπάρχουν λογαριασμοί, φόρμες επικοινωνίας ή analytics.",
+    privacyP2: "Ο βοηθός συνομιλίας είναι scripted demo που εκτελείται εξ ολοκλήρου στον browser σας. Τα μηνύματα που πληκτρολογείτε δεν μεταδίδονται ούτε αποθηκεύονται πουθενά.",
+    privacyP3: "Η επιλογή γλώσσας και η προτίμηση για το banner cookies αποθηκεύονται μόνο τοπικά στον browser σας.",
+    privacyP5: "Για ερωτήσεις σχετικά με το demo ή το domain, επικοινωνήστε στο",
     termsCloseAria: "Κλείσιμο όρων",
     termsTitle: "Όροι",
     termsP1: "Ορισμένοι σύνδεσμοι μπορεί να είναι συνεργατικές προτάσεις. Οι πληροφορίες πρέπει να επιβεβαιώνονται πριν από κράτηση ή μετακίνηση.",
@@ -377,8 +373,7 @@ const menuToggle = document.querySelector(".menu-toggle");
 const siteNav = document.querySelector(".site-nav");
 const currentYear = document.querySelector("#current-year");
 const cookieBanner = document.querySelector("#cookie-banner");
-const acceptCookies = document.querySelector("#accept-cookies");
-const essentialCookies = document.querySelector("#essential-cookies");
+const dismissCookies = document.querySelector("#dismiss-cookies");
 const languageButtons = document.querySelectorAll("[data-language]");
 const languageToggle = document.querySelector(".language-toggle");
 const workerUrl = "PASTE_ASKMYKONOS_WORKER_URL_HERE";
@@ -570,13 +565,8 @@ if (cookieBanner && !getCookiePreference()) {
   cookieBanner.classList.remove("is-hidden");
 }
 
-acceptCookies?.addEventListener("click", () => {
-  setCookiePreference("all");
-  hideCookieBanner();
-});
-
-essentialCookies?.addEventListener("click", () => {
-  setCookiePreference("necessary");
+dismissCookies?.addEventListener("click", () => {
+  setCookiePreference("dismissed");
   hideCookieBanner();
 });
 

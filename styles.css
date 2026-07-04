@@ -1800,22 +1800,6 @@ a.network-destination.is-live:hover {
   background: var(--gold-bright);
 }
 
-.cookie-secondary {
-  min-height: 42px;
-  padding: 11px 14px;
-  border: 1px solid rgba(246, 243, 234, 0.28);
-  border-radius: 999px;
-  background: transparent;
-  color: rgba(199, 205, 218, 0.85);
-  font-size: 0.85rem;
-  font-weight: 600;
-}
-
-.cookie-secondary:hover {
-  border-color: rgba(246, 243, 234, 0.5);
-  color: #ffffff;
-}
-
 /* --------------------------------------------------------------------------
    Modals
    -------------------------------------------------------------------------- */

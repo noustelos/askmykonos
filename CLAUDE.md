@@ -142,7 +142,13 @@ that branch when/if it comes.
   orphaned i18n keys pruned; footer credit left-aligned single line; night logo/favicon.
 - **Done (privacy phase)**: GDPR boilerplate → demo note; zero dead emails
   (grep-verified); informational cookie banner; README rewritten as factual
-  demo documentation. Current asset version: `?v=dion4`.
+  demo documentation. Current asset version: `?v=dion5`.
+- **Done (honesty touches)**: Instagram links → asksantoriniai profile; chat
+  status dot green → `--bloom` pink (demo signal, matches LIVE DEMO badge);
+  "Powered by advanced AI" line → honest scripted-demo note linking to
+  asksantorini.ai (third sanctioned cross-site reference); the "answers may
+  need verification" disclaimer removed entirely (scripted answers need no
+  such hedge) — `geminiNote` keys and `.chat-disclaimer-note` CSS pruned.
 - **Pending**: `script.min.js` stale (delete when asked); the "Ask naturally"
   step copy still says "Type or speak" (voice removed) — fix in the copy phase;
   OG/social SVG still light-themed; old `ask-mykonos-logo.svg` unused; llms.txt
@@ -175,5 +181,6 @@ Gotchas:
   `Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>`
 - Known inconsistency: [privacy-policy.html](privacy-policy.html) is still English-only.
 - Zero cross-project dependency: never wire this site to the AskSantorini Worker or any
-  shared infra. The only sanctioned cross-site references are the acquisition mailto and
-  the network panel links.
+  shared infra. The only sanctioned cross-site references are the acquisition mailto,
+  the network panel links, the chat card's "live AI concierge" link to asksantorini.ai,
+  and the Instagram links (asksantoriniai profile).

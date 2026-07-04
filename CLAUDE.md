@@ -20,6 +20,10 @@ The Pages project is git-connected to `main` (github.com/noustelos/askmykonos).
 Work on a branch, verify locally, and only merge/push when asked. For rollback,
 revert/reset to the previous main commit and push.
 
+`styles.css`/`script.js` are edge- and browser-cached for 24h (`_headers`), so the
+HTML references them with a `?v=` query — **bump that version whenever you change
+either file**, or live visitors keep the stale asset for up to a day.
+
 ## Files that matter
 
 - [index.html](index.html) — the whole landing page (acquisition banner, hero +

@@ -41,7 +41,6 @@ either file**, or live visitors keep the stale asset for up to a day.
   current logo (coupe glass). `ask-mykonos-logo.svg` is the old light-theme logo, unused.
 - [_headers](_headers) — Cloudflare Pages security headers (CSP, HSTS, cache).
 - [robots.txt](robots.txt) / [sitemap.xml](sitemap.xml) — keep sitemap in sync with pages.
-- `script.min.js` — **stale/unused**, not referenced by any page. Ignore (or delete if asked).
 
 ## Design system — "Mykonos by Night" (styles.css)
 
@@ -149,7 +148,9 @@ that branch when/if it comes.
   asksantorini.ai (third sanctioned cross-site reference); the "answers may
   need verification" disclaimer removed entirely (scripted answers need no
   such hedge) — `geminiNote` keys and `.chat-disclaimer-note` CSS pruned.
-- **Pending**: `script.min.js` stale (delete when asked); the "Ask naturally"
+- **Done**: stale `script.min.js` deleted (doubled as the auto-deploy test after
+  the Cloudflare git-connection was restored).
+- **Pending**: the "Ask naturally"
   step copy still says "Type or speak" (voice removed) — fix in the copy phase;
   OG/social SVG still light-themed; old `ask-mykonos-logo.svg` unused; llms.txt
   intro still describes a "live AI guide" (demo honesty pass pending — Nikos).

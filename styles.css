@@ -197,16 +197,25 @@ h3 {
 }
 
 .seo-context {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  white-space: nowrap;
+  padding: 40px 16px;
+}
+
+.seo-context-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.seo-context h2 {
+  font-size: 1.05rem;
+  color: var(--whitewash);
+  margin-bottom: 10px;
+}
+
+.seo-context p {
+  font-size: 0.85rem;
+  line-height: 1.7;
+  color: var(--muted);
 }
 
 /* --------------------------------------------------------------------------

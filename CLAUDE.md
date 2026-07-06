@@ -141,7 +141,7 @@ that branch when/if it comes.
   orphaned i18n keys pruned; footer credit left-aligned single line; night logo/favicon.
 - **Done (privacy phase)**: GDPR boilerplate → demo note; zero dead emails
   (grep-verified); informational cookie banner; README rewritten as factual
-  demo documentation. Current asset version: `?v=dion5`.
+  demo documentation. Current asset version: `?v=dion6`.
 - **Done (honesty touches)**: Instagram links → asksantoriniai profile; chat
   status dot green → `--bloom` pink (demo signal, matches LIVE DEMO badge);
   "Powered by advanced AI" line → honest scripted-demo note linking to

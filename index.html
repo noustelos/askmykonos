@@ -7,36 +7,42 @@
     <meta name="description" content="AskMykonos.ai is your smart, stylish shortcut to Mykonos: beaches, transfers, sunsets, food and plans without the group chat meltdown.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://askmykonos.ai/">
-    <link rel="alternate" hreflang="en" href="https://askmykonos.ai/?lang=en">
-    <link rel="alternate" hreflang="el" href="https://askmykonos.ai/?lang=el">
-    <link rel="alternate" hreflang="x-default" href="https://askmykonos.ai/">
     <meta property="og:title" content="AskMykonos.ai – Smart, Stylish Mykonos Answers">
     <meta property="og:description" content="Beaches, transfers, sunsets, food and plans without the group chat meltdown. Ask anything. The island has opinions.">
     <meta property="og:url" content="https://askmykonos.ai/">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Ask Mykonos AI">
     <meta property="og:locale" content="en_US">
-    <meta property="og:image" content="https://askmykonos.ai/assets/social/ask-mykonos-og.svg">
+    <meta property="og:locale:alternate" content="el_GR">
+    <meta property="og:image" content="https://askmykonos.ai/assets/social/ask-mykonos-og.png">
     <meta property="og:image:alt" content="Ask Mykonos AI logo on a light background">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="AskMykonos.ai – Smart, Stylish Mykonos Answers">
     <meta name="twitter:description" content="Your smart, stylish shortcut to Mykonos. Useful answers, minimal nonsense.">
-    <meta name="twitter:image" content="https://askmykonos.ai/assets/social/ask-mykonos-og.svg">
+    <meta name="twitter:image" content="https://askmykonos.ai/assets/social/ask-mykonos-og.png">
     <meta name="theme-color" content="#0A1120">
     <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=dion5">
+    <link rel="stylesheet" href="styles.css?v=dion6">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@graph": [
           {
+            "@type": "Organization",
+            "@id": "https://askmykonos.ai/#organization",
+            "name": "AskMykonos.ai",
+            "url": "https://askmykonos.ai/",
+            "logo": "https://askmykonos.ai/assets/brand/ask-mykonos-logo-night.svg"
+          },
+          {
             "@type": "WebSite",
             "@id": "https://askmykonos.ai/#website",
+            "publisher": { "@id": "https://askmykonos.ai/#organization" },
             "name": "AskMykonos.ai",
             "url": "https://askmykonos.ai/",
             "description": "AskMykonos.ai is a smart, stylish Mykonos assistant for travel questions about beaches, sunsets, transfers, food and local plans.",
@@ -361,9 +367,11 @@
       </section>
     </main>
 
-    <section class="seo-context" aria-label="AskMykonos.ai search context">
-      <h2>AskMykonos.ai is a Mykonos AI assistant</h2>
-      <p>Use this Mykonos travel guide AI for things to do in Mykonos, Mykonos beaches, Mykonos sunset spots, Mykonos tours, boat rentals Mykonos, food, transport and local experiences. AskMykonos.ai works as an AI travel planner for Greece focused on real-time Mykonos questions.</p>
+    <section class="seo-context" aria-label="About AskMykonos.ai">
+      <div class="seo-context-inner section-shell">
+        <h2 data-i18n="seoContextTitle">AskMykonos.ai is a Mykonos AI assistant</h2>
+        <p data-i18n="seoContextText">Use this Mykonos travel guide AI for things to do in Mykonos, Mykonos beaches, Mykonos sunset spots, Mykonos tours, boat rentals Mykonos, food, transport and local experiences. AskMykonos.ai works as an AI travel planner for Greece focused on real-time Mykonos questions.</p>
+      </div>
     </section>
 
     <div class="acquisition-strip">
@@ -418,6 +426,6 @@
       </div>
     </dialog>
 
-    <script src="script.js?v=dion5" defer></script>
+    <script src="script.js?v=dion6" defer></script>
   </body>
 </html>

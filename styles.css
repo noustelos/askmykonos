@@ -1712,6 +1712,18 @@ a.network-destination.is-live:hover {
   text-align: center;
 }
 
+.acquisition-strip .acquisition-slogan {
+  display: block;
+  flex-basis: 100%;
+  margin: 0;
+  color: var(--gold);
+  font-family: var(--serif);
+  font-size: 0.98rem;
+  font-style: italic;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
 .acquisition-strip .button {
   gap: 8px;
   min-height: 44px;

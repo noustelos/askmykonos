@@ -251,6 +251,16 @@ h3 {
   background: rgba(239, 90, 139, 0.16);
 }
 
+.acquisition-banner-slogan {
+  margin: 8px 16px 0;
+  text-align: center;
+  color: var(--gold);
+  font-family: var(--serif, Georgia, serif);
+  font-size: 0.9rem;
+  font-style: italic;
+  line-height: 1.4;
+}
+
 .acquisition-dot {
   width: 6px;
   height: 6px;

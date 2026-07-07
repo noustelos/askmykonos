@@ -76,8 +76,19 @@ Dark Aegean glamour; theatrical but never neon-grid/cyberpunk. Tokens in `:root`
 - **Acquisition messaging**: top pill banner (above header) + pre-footer strip, both
   mailto **info@asksantorini.ai** (the working address), subject
   "AskMykonos.ai Domain Acquisition".
-- **ASK network panel** (replaces Contact panel): asksantorini.ai LIVE /
-  asksingapore.ai DEMO / askmykonos.ai DEMO—this site / askparos.ai COMING SOON.
+- **ASK network panel** (replaces Contact panel): honest portfolio copy ("the
+  flagship runs it live; the rest is premium 'Ask' domains with working demos,
+  available for acquisition"), 7 domains in a 2-col pill grid: asksantorini.ai
+  LIVE (mint) / asksingapore.ai, askparos.ai, askaustralia.ai, asksydney.ai,
+  asknewyork.ai DEMO·FOR SALE (gold badges, clickable) / askmykonos.ai
+  DEMO·FOR SALE—THIS SITE (spans both columns, not a link). ≤420px each pill
+  stacks domain-over-badge.
+- **Revenue Potential section** (`#revenue`): sits between the SEO-context block
+  and the pre-footer acquisition strip (read the potential → see Enquire).
+  4 cards (affiliate commissions with asksantorini.ai link / featured listings /
+  booking integration / sponsored answers) + italic gold note about the
+  flagship's affiliate attribution engine. **No earnings numbers or guarantees —
+  ever.** Bilingual via `revenue*` i18n keys.
 
 ## Privacy & cookies (demo-appropriate, shipped)
 
@@ -141,7 +152,7 @@ that branch when/if it comes.
   orphaned i18n keys pruned; footer credit left-aligned single line; night logo/favicon.
 - **Done (privacy phase)**: GDPR boilerplate → demo note; zero dead emails
   (grep-verified); informational cookie banner; README rewritten as factual
-  demo documentation. Current asset version: `?v=dion6`.
+  demo documentation.
 - **Done (honesty touches)**: Instagram links → asksantoriniai profile; chat
   status dot green → `--bloom` pink (demo signal, matches LIVE DEMO badge);
   "Powered by advanced AI" line → honest scripted-demo note linking to
@@ -150,10 +161,13 @@ that branch when/if it comes.
   such hedge) — `geminiNote` keys and `.chat-disclaimer-note` CSS pruned.
 - **Done**: stale `script.min.js` deleted (doubled as the auto-deploy test after
   the Cloudflare git-connection was restored).
+- **Done (revenue + network phase)**: Revenue Potential section added; network
+  panel updated to the 7-domain for-sale portfolio (unused `is-soon` pill CSS
+  removed); llms.txt rewritten honestly (scripted demo chat, network portfolio,
+  domain-acquisition section). Current asset version: `?v=dion7`.
 - **Pending**: the "Ask naturally"
   step copy still says "Type or speak" (voice removed) — fix in the copy phase;
-  OG/social SVG still light-themed; old `ask-mykonos-logo.svg` unused; llms.txt
-  intro still describes a "live AI guide" (demo honesty pass pending — Nikos).
+  OG/social SVG still light-themed; old `ask-mykonos-logo.svg` unused.
 
 ## Previewing changes (headless Chrome)
 
@@ -184,4 +198,5 @@ Gotchas:
 - Zero cross-project dependency: never wire this site to the AskSantorini Worker or any
   shared infra. The only sanctioned cross-site references are the acquisition mailto,
   the network panel links, the chat card's "live AI concierge" link to asksantorini.ai,
-  and the Instagram links (asksantoriniai profile).
+  the revenue section's asksantorini.ai proof link, and the Instagram links
+  (asksantoriniai profile).

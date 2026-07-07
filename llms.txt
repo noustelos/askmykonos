@@ -1,19 +1,23 @@
 # AskMykonos.ai
 
-> A free, live AI travel guide for Mykonos, Greece. Ask in plain language — in English,
-> Greek, or your own language — about beaches, sunsets, boat trips, food, transfers and
-> day plans, and get a few relevant suggestions with the details that matter, instead of
-> ten browser tabs. No app, no sign-up, no ads.
+> A working demo of an AI travel concierge for Mykonos, Greece. Ask in plain language —
+> in English or Greek — about beaches, sunsets, boat trips, food, transfers and day plans.
+> The chat on this site is a scripted, in-browser demonstration of the concept; the
+> premium domain AskMykonos.ai is available for acquisition. No app, no sign-up, no ads,
+> no tracking.
 
 AskMykonos.ai is an independent visitor guide and is not an official tourism authority.
-It is part of the "ASK AI Travel Network" (sibling site: AskSantorini.ai). AI-generated
-answers may be incomplete or outdated; schedules, prices, availability and safety-sensitive
-details should be verified with the relevant provider.
+It is part of the "ASK AI Travel Network": the flagship, AskSantorini.ai, runs the concept
+live as a real AI concierge; the rest of the network — AskSingapore.ai, AskMykonos.ai,
+AskParos.ai, AskAustralia.ai, AskSydney.ai and AskNewYork.ai — is a portfolio of premium
+"Ask" domains, each with a working demo, available for acquisition. Schedules, prices,
+availability and safety-sensitive details should always be verified with the relevant
+provider.
 
 ## Core pages
 
-- [Home / live AI chat](https://askmykonos.ai/): Ask the island anything; starter questions
-  for sunsets, beaches, Delos, windy days, dinner and family plans.
+- [Home / scripted demo chat](https://askmykonos.ai/): Try the concierge concept with
+  starter questions for sunsets, beaches, Delos, windy days, dinner and family plans.
 - [Mykonos Travel FAQ (English)](https://askmykonos.ai/faq.html): Quick answers on sunsets,
   windy-day plans, beaches, getting around and whether you need a car.
 - [Mykonos Travel FAQ (Greek)](https://askmykonos.ai/faq-el.html): Οι ίδιες συχνές
@@ -36,6 +40,14 @@ details should be verified with the relevant provider.
 
 - [Concierge services](https://askmykonos.ai/#concierge): Ask about photographers, wedding
   and ceremony planners, flowers and setups, and premium transfers with local context.
+
+## Domain acquisition
+
+- [Revenue potential](https://askmykonos.ai/#revenue): What the domain could become —
+  affiliate commissions (the model proven on the network flagship, asksantorini.ai),
+  featured listings, booking integration and clearly labeled sponsored answers.
+- [Enquire](mailto:info@asksantorini.ai?subject=AskMykonos.ai%20Domain%20Acquisition):
+  Acquisition enquiries for the AskMykonos.ai domain.
 
 ## Legal & contact
 

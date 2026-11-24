@@ -2,7 +2,7 @@
 
 Static demo site for **AskMykonos.ai** — a scripted AI-travel-concierge
 **demonstration** for Mykonos, Greece. Part of the "ASK" network of AI travel
-guides. The domain is **available for acquisition**: info@asksantorini.ai.
+guides. The domain is **available for acquisition**: info@noustelos.gr.
 
 ## Status
 
@@ -65,4 +65,4 @@ Cloudflare Pages, **git-connected to `main`**: every push to `main` goes
 
 Zero cross-project dependency: this site calls no external services. The only
 sanctioned cross-site references are the acquisition mailto
-(info@asksantorini.ai) and the network panel links.
+(info@noustelos.gr) and the network panel links.

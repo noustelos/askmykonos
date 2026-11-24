@@ -70,11 +70,11 @@ Dark Aegean glamour; theatrical but never neon-grid/cyberpunk. Tokens in `:root`
 ## Current page structure (post-restructure)
 
 - **Dead emails removed**: NO `@askmykonos.ai` address works — none may appear
-  anywhere (grep-verified zero). All contact points to **info@asksantorini.ai**
+  anywhere (grep-verified zero). All contact points to **info@noustelos.gr** (studio address, not on the for-sale domain)
   (privacy page ×2, index privacy/terms modals, llms.txt ×2 + acquisition banners).
   The Contact panel (form) and Partners panel are gone.
 - **Acquisition messaging**: top pill banner (above header) + pre-footer strip, both
-  mailto **info@asksantorini.ai** (the working address), subject
+  mailto **info@noustelos.gr** (the working address), subject
   "AskMykonos.ai Domain Acquisition".
 - **ASK network panel** (replaces Contact panel): honest portfolio copy ("the
   flagship runs it live; the rest is premium 'Ask' domains with working demos,
@@ -94,7 +94,7 @@ Dark Aegean glamour; theatrical but never neon-grid/cyberpunk. Tokens in `:root`
 
 - The full-GDPR policy was **replaced with an honest demo note** (5 sections:
   no data collection / scripted in-browser chat / local-only preferences /
-  Cloudflare hosting / contact info@asksantorini.ai). The index privacy modal
+  Cloudflare hosting / contact info@noustelos.gr). The index privacy modal
   carries the same message bilingually; the terms modal kept "verify info /
   independent guide". Leftovers fixed at the same time: privacy meta
   descriptions claiming "Cloudflare Worker + Google Gemini" processing, dead
